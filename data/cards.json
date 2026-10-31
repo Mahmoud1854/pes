@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Jasolise",
+    "club": "Bayern Munich",
+    "position": "LW",
+    "rating": 108,
+    "type": "unique",
+    "image": "cards/Jasolise%20%28unique%20card%29.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jonathan",
+    "club": "Real Madrid",
+    "position": "CB",
+    "rating": 108,
+    "type": "unique",
+    "image": "cards/jonathan%20%28uniqe%20card%29.jpg"
+  },
+  {
+    "id": 3,
+    "name": "El3awady",
+    "club": "Real Madrid",
+    "position": "RB",
+    "rating": 108,
+    "type": "unique",
+    "image": "cards/El3awady%20%28uniqe%20card%29.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bruno Fernandes",
+    "club": "Manchester United",
+    "position": "AMF",
+    "rating": 86,
+    "type": "basic",
+    "image": "cards/bruno-fernandes.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Moísés Caicedo",
+    "club": "Chelsea",
+    "position": "DMF",
+    "rating": 86,
+    "type": "basic",
+    "image": "cards/Caicedo.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Ousmane Dembélé",
+    "club": "Paris Saint-Germain",
+    "position": "CF",
+    "rating": 83,
+    "type": "basic",
+    "image": "cards/dembele.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ederson Moraes",
+    "club": "Fenerbahçe",
+    "position": "GK",
+    "rating": 82,
+    "type": "basic",
+    "image": "cards/Ederson.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Saharat Kanyarot",
+    "club": "PT Prachuap",
+    "position": "AMF",
+    "rating": 66,
+    "type": "basic",
+    "image": "cards/Kanyarot.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Mashhor",
+    "club": "Real Betis",
+    "position": "AMF",
+    "rating": 82,
+    "type": "basic",
+    "image": "cards/mashor.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mohamed Salah",
+    "club": "Trabzonspor",
+    "position": "RWF",
+    "rating": 80,
+    "type": "basic",
+    "image": "cards/Mohamed%20salah.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Andrew Robertson",
+    "club": "Liverpool",
+    "position": "LB",
+    "rating": 82,
+    "type": "basic",
+    "image": "cards/robertson.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Sakamoto Isa",
+    "club": "KVC Westerlo",
+    "position": "AMF",
+    "rating": 68,
+    "type": "basic",
+    "image": "cards/sakamoto.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Ferran Torres",
+    "club": "Paris Saint-Germain",
+    "position": "CF",
+    "rating": 79,
+    "type": "basic",
+    "image": "cards/torres.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Leandro Trossard",
+    "club": "Beşiktaş",
+    "position": "LWF",
+    "rating": 77,
+    "type": "basic",
+    "image": "cards/trossard.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Federico Valverde",
+    "club": "Real Madrid",
+    "position": "CMF",
+    "rating": 86,
+    "type": "basic",
+    "image": "cards/valverde.jpg"
+  }
+]

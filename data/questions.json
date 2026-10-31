@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 1,
+    "question": "Which country won the 2022 FIFA World Cup?",
+    "options": [
+      "Argentina",
+      "France",
+      "Croatia",
+      "Morocco"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 2,
+    "question": "Which country hosted the 2022 World Cup?",
+    "options": [
+      "Russia",
+      "Qatar",
+      "Brazil",
+      "Saudi Arabia"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 3,
+    "question": "Which country has won the most World Cups?",
+    "options": [
+      "Germany",
+      "Italy",
+      "Brazil",
+      "Argentina"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "question": "Who scored the famous 'Hand of God' goal at the 1986 World Cup?",
+    "options": [
+      "Pelé",
+      "Zinedine Zidane",
+      "Johan Cruyff",
+      "Diego Maradona"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "question": "Which country won the very first World Cup in 1930?",
+    "options": [
+      "Uruguay",
+      "Brazil",
+      "Argentina",
+      "Italy"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 6,
+    "question": "Which country won the 2018 World Cup in Russia?",
+    "options": [
+      "Croatia",
+      "France",
+      "Belgium",
+      "England"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "question": "Who scored a hat-trick in the 2022 World Cup final?",
+    "options": [
+      "Lionel Messi",
+      "Ángel Di María",
+      "Kylian Mbappé",
+      "Olivier Giroud"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "Which country hosted the 2018 World Cup?",
+    "options": [
+      "Qatar",
+      "Germany",
+      "Brazil",
+      "Russia"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 9,
+    "question": "Which country won the 2010 World Cup?",
+    "options": [
+      "Spain",
+      "Netherlands",
+      "Germany",
+      "Uruguay"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "question": "Which country won the 2014 World Cup?",
+    "options": [
+      "Argentina",
+      "Germany",
+      "Netherlands",
+      "Brazil"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "The 2026 World Cup was hosted by the USA, Canada and which other country?",
+    "options": [
+      "Brazil",
+      "Argentina",
+      "Mexico",
+      "Costa Rica"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 12,
+    "question": "How many World Cups did Pelé win with Brazil?",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "3"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 13,
+    "question": "Which country won Euro 2016?",
+    "options": [
+      "Portugal",
+      "France",
+      "Germany",
+      "Wales"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "Which country won Euro 2020 (played in 2021)?",
+    "options": [
+      "England",
+      "Italy",
+      "Spain",
+      "Denmark"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "Which country won Euro 2024?",
+    "options": [
+      "England",
+      "France",
+      "Spain",
+      "Germany"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "question": "Senegal won the 2022 Africa Cup of Nations. Which country did they beat in the final?",
+    "options": [
+      "Nigeria",
+      "Morocco",
+      "Algeria",
+      "Egypt"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 17,
+    "question": "Which country has won the most Africa Cup of Nations titles?",
+    "options": [
+      "Egypt",
+      "Cameroon",
+      "Ghana",
+      "Nigeria"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 18,
+    "question": "Egypt hosted the 2019 Africa Cup of Nations. Which country won it?",
+    "options": [
+      "Senegal",
+      "Algeria",
+      "Nigeria",
+      "Ivory Coast"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 19,
+    "question": "Mohamed Salah joined Liverpool in 2017 from which club?",
+    "options": [
+      "Chelsea",
+      "Fiorentina",
+      "Roma",
+      "Basel"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 20,
+    "question": "Which club is Al Ahly's biggest rival in Cairo?",
+    "options": [
+      "Pyramids",
+      "Ismaily",
+      "Al Masry",
+      "Zamalek"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 21,
+    "question": "Which African country was the first to play at a World Cup, in 1934?",
+    "options": [
+      "Egypt",
+      "Morocco",
+      "Nigeria",
+      "Cameroon"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 22,
+    "question": "Which Egyptian legend holds the record for most appearances for the national team?",
+    "options": [
+      "Essam El-Hadary",
+      "Ahmed Hassan",
+      "Mohamed Aboutrika",
+      "Hossam Hassan"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "question": "Which club has won the most CAF Champions League titles?",
+    "options": [
+      "Zamalek",
+      "Espérance",
+      "Al Ahly",
+      "TP Mazembe"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 24,
+    "question": "Which club won the 2025 CAF Champions League?",
+    "options": [
+      "Al Ahly",
+      "Zamalek",
+      "Mamelodi Sundowns",
+      "Pyramids FC"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 25,
+    "question": "Which club has won the most European Cup / Champions League titles?",
+    "options": [
+      "Real Madrid",
+      "AC Milan",
+      "Liverpool",
+      "Bayern Munich"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 26,
+    "question": "Which club won the 2019 Champions League?",
+    "options": [
+      "Tottenham",
+      "Liverpool",
+      "Barcelona",
+      "Ajax"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "question": "Which club won its first Champions League title in 2023?",
+    "options": [
+      "Inter Milan",
+      "Arsenal",
+      "Manchester City",
+      "Chelsea"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 28,
+    "question": "Which German club lost the 2024 Champions League final to Real Madrid?",
+    "options": [
+      "Bayern Munich",
+      "RB Leipzig",
+      "Bayer Leverkusen",
+      "Borussia Dortmund"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 29,
+    "question": "Which French club won its first Champions League title in 2025?",
+    "options": [
+      "Paris Saint-Germain",
+      "Marseille",
+      "Monaco",
+      "Lyon"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 30,
+    "question": "In the 2005 final, Liverpool came back from 3-0 down at half-time. Which team were they playing?",
+    "options": [
+      "Juventus",
+      "AC Milan",
+      "Chelsea",
+      "Barcelona"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 31,
+    "question": "Which club won the treble (league, cup and Champions League) in 2009?",
+    "options": [
+      "Real Madrid",
+      "Manchester United",
+      "Barcelona",
+      "Inter Milan"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 32,
+    "question": "In which year did Manchester United win the Premier League, FA Cup and Champions League?",
+    "options": [
+      "1995",
+      "2003",
+      "2008",
+      "1999"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 33,
+    "question": "Which club is nicknamed 'The Gunners'?",
+    "options": [
+      "Arsenal",
+      "Chelsea",
+      "Tottenham",
+      "West Ham"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 34,
+    "question": "Which club plays its home games at the Santiago Bernabéu?",
+    "options": [
+      "Atlético Madrid",
+      "Real Madrid",
+      "Barcelona",
+      "Valencia"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 35,
+    "question": "Which club plays its home games at Anfield?",
+    "options": [
+      "Everton",
+      "Manchester City",
+      "Liverpool",
+      "Leeds United"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 36,
+    "question": "Which club plays its home games at Old Trafford?",
+    "options": [
+      "Manchester City",
+      "Newcastle",
+      "Chelsea",
+      "Manchester United"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 37,
+    "question": "Which two clubs share the San Siro stadium?",
+    "options": [
+      "AC Milan and Inter Milan",
+      "Juventus and Torino",
+      "Roma and Lazio",
+      "Napoli and Fiorentina"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 38,
+    "question": "Which club plays its home games at the Allianz Arena?",
+    "options": [
+      "Borussia Dortmund",
+      "Bayern Munich",
+      "Bayer Leverkusen",
+      "Schalke"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "question": "Which club plays at Signal Iduna Park?",
+    "options": [
+      "Bayern Munich",
+      "Schalke",
+      "Borussia Dortmund",
+      "Hamburg"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 40,
+    "question": "Juventus is based in which Italian city?",
+    "options": [
+      "Milan",
+      "Rome",
+      "Naples",
+      "Turin"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 41,
+    "question": "Who has won the most Ballon d'Or awards?",
+    "options": [
+      "Lionel Messi",
+      "Cristiano Ronaldo",
+      "Michel Platini",
+      "Johan Cruyff"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 42,
+    "question": "Who won the Ballon d'Or in 2018?",
+    "options": [
+      "Kylian Mbappé",
+      "Luka Modrić",
+      "Cristiano Ronaldo",
+      "Antoine Griezmann"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 43,
+    "question": "Who won the Ballon d'Or in 2022?",
+    "options": [
+      "Kylian Mbappé",
+      "Luka Modrić",
+      "Karim Benzema",
+      "Robert Lewandowski"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 44,
+    "question": "Who won the Ballon d'Or in 2024?",
+    "options": [
+      "Vinícius Júnior",
+      "Jude Bellingham",
+      "Dani Carvajal",
+      "Rodri"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 45,
+    "question": "Who won the Ballon d'Or in 2025?",
+    "options": [
+      "Ousmane Dembélé",
+      "Lamine Yamal",
+      "Kylian Mbappé",
+      "Mohamed Salah"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 46,
+    "question": "Cristiano Ronaldo joined Manchester United in 2003. Which club did he leave?",
+    "options": [
+      "Benfica",
+      "Sporting CP",
+      "Porto",
+      "Real Madrid"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 47,
+    "question": "Which club did Cristiano Ronaldo leave to join Juventus in 2018?",
+    "options": [
+      "Manchester United",
+      "Barcelona",
+      "Real Madrid",
+      "Sporting CP"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 48,
+    "question": "Neymar's 2017 world-record transfer to PSG was from which club?",
+    "options": [
+      "Santos",
+      "Real Madrid",
+      "Bayern Munich",
+      "Barcelona"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 49,
+    "question": "How many Premier League goals did Mohamed Salah score in his record 2017-18 season?",
+    "options": [
+      "32",
+      "28",
+      "30",
+      "35"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 50,
+    "question": "Erling Haaland joined Manchester City in 2022 from which club?",
+    "options": [
+      "Red Bull Salzburg",
+      "Borussia Dortmund",
+      "Leeds United",
+      "Bayern Munich"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 51,
+    "question": "Kylian Mbappé joined Real Madrid in 2024 from which club?",
+    "options": [
+      "Monaco",
+      "Liverpool",
+      "Paris Saint-Germain",
+      "Chelsea"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 52,
+    "question": "Which player did Zinedine Zidane head-butt in the 2006 World Cup final?",
+    "options": [
+      "Gennaro Gattuso",
+      "Fabio Cannavaro",
+      "Andrea Pirlo",
+      "Marco Materazzi"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 53,
+    "question": "Which goalkeeper won the Golden Glove at the 2022 World Cup?",
+    "options": [
+      "Emiliano Martínez",
+      "Hugo Lloris",
+      "Dominik Livaković",
+      "Yassine Bounou"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 54,
+    "question": "Who won the Golden Boot at the 2022 World Cup?",
+    "options": [
+      "Lionel Messi",
+      "Kylian Mbappé",
+      "Olivier Giroud",
+      "Julián Álvarez"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 55,
+    "question": "Which African team became the first to reach a World Cup semi-final, in 2022?",
+    "options": [
+      "Senegal",
+      "Ghana",
+      "Morocco",
+      "Cameroon"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 56,
+    "question": "Who is England's all-time top goalscorer?",
+    "options": [
+      "Wayne Rooney",
+      "Bobby Charlton",
+      "Gary Lineker",
+      "Harry Kane"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 57,
+    "question": "Who is the Premier League's all-time top goalscorer?",
+    "options": [
+      "Alan Shearer",
+      "Wayne Rooney",
+      "Harry Kane",
+      "Andy Cole"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 58,
+    "question": "Which team went the whole 2003-04 Premier League season unbeaten?",
+    "options": [
+      "Chelsea",
+      "Arsenal",
+      "Manchester United",
+      "Liverpool"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 59,
+    "question": "Which club shocked everyone by winning the Premier League in 2015-16?",
+    "options": [
+      "Tottenham",
+      "Everton",
+      "Leicester City",
+      "West Ham"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 60,
+    "question": "Which manager led Manchester United from 1986 to 2013?",
+    "options": [
+      "José Mourinho",
+      "Arsène Wenger",
+      "Matt Busby",
+      "Sir Alex Ferguson"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 61,
+    "question": "Which manager is famous for calling himself 'The Special One'?",
+    "options": [
+      "José Mourinho",
+      "Pep Guardiola",
+      "Jürgen Klopp",
+      "Carlo Ancelotti"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 62,
+    "question": "In which season did Manchester City win the treble?",
+    "options": [
+      "2018-19",
+      "2022-23",
+      "2020-21",
+      "2021-22"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 63,
+    "question": "Which coach led Argentina to the 2022 World Cup title?",
+    "options": [
+      "Diego Simeone",
+      "Marcelo Bielsa",
+      "Lionel Scaloni",
+      "Gerardo Martino"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 64,
+    "question": "Who was France's coach when they won the 2018 World Cup?",
+    "options": [
+      "Zinedine Zidane",
+      "Laurent Blanc",
+      "Raymond Domenech",
+      "Didier Deschamps"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 65,
+    "question": "Which Argentine coach led Atlético Madrid to the La Liga title in 2013-14?",
+    "options": [
+      "Diego Simeone",
+      "Marcelo Bielsa",
+      "Mauricio Pochettino",
+      "Jorge Sampaoli"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 66,
+    "question": "How many minutes does a normal football match last, not counting extra time?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "120"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 67,
+    "question": "What do we call it when a player scores three goals in one match?",
+    "options": [
+      "Brace",
+      "Double",
+      "Hat-trick",
+      "Clean sheet"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 68,
+    "question": "How many yellow cards in one match lead to a red card?",
+    "options": [
+      "1",
+      "3",
+      "4",
+      "2"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 69,
+    "question": "To be onside, an attacker must have at least how many opponents (including the goalkeeper) between them and the goal line when the ball is played?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 70,
+    "question": "About how far is the penalty spot from the goal line?",
+    "options": [
+      "9 metres",
+      "11 metres",
+      "13 metres",
+      "16 metres"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 71,
+    "question": "What does VAR stand for?",
+    "options": [
+      "Video Action Review",
+      "Visual Assistant Referee",
+      "Video Assistant Referee",
+      "Very Accurate Referee"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 72,
+    "question": "How long is each half of extra time?",
+    "options": [
+      "10 minutes",
+      "20 minutes",
+      "25 minutes",
+      "15 minutes"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 73,
+    "question": "In football, what does a 'clean sheet' mean?",
+    "options": [
+      "A team does not concede a goal",
+      "A player scores a hat-trick",
+      "A team wins by five goals",
+      "A team gets no yellow cards"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 74,
+    "question": "What do we call it when a player scores two goals in one match?",
+    "options": [
+      "A hat-trick",
+      "A brace",
+      "A double-play",
+      "A clean sheet"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 75,
+    "question": "In which country is the Bundesliga played?",
+    "options": [
+      "Austria",
+      "Switzerland",
+      "Germany",
+      "Netherlands"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 76,
+    "question": "In which country is Serie A played?",
+    "options": [
+      "Spain",
+      "France",
+      "Portugal",
+      "Italy"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 77,
+    "question": "In which country is the Eredivisie played?",
+    "options": [
+      "Netherlands",
+      "Belgium",
+      "Denmark",
+      "Sweden"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 78,
+    "question": "Which country won the 1998 World Cup on home soil?",
+    "options": [
+      "Brazil",
+      "France",
+      "Italy",
+      "Netherlands"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 79,
+    "question": "The 'Merseyside derby' is Liverpool against which club?",
+    "options": [
+      "Tottenham",
+      "Manchester City",
+      "Everton",
+      "Aston Villa"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 80,
+    "question": "'El Clásico' is Real Madrid against which club?",
+    "options": [
+      "Atlético Madrid",
+      "Sevilla",
+      "Valencia",
+      "Barcelona"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 81,
+    "question": "The 'Derby della Madonnina' is AC Milan against which club?",
+    "options": [
+      "Inter Milan",
+      "Juventus",
+      "Roma",
+      "Napoli"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 82,
+    "question": "'Der Klassiker' in Germany is Bayern Munich against which club?",
+    "options": [
+      "Schalke",
+      "Borussia Dortmund",
+      "Hamburg",
+      "Werder Bremen"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 83,
+    "question": "Which club plays its home games at the Parc des Princes?",
+    "options": [
+      "Marseille",
+      "Lyon",
+      "Paris Saint-Germain",
+      "Monaco"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 84,
+    "question": "Which national team is nicknamed 'Les Bleus'?",
+    "options": [
+      "Italy",
+      "Belgium",
+      "Netherlands",
+      "France"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 85,
+    "question": "Which national team is nicknamed 'The Three Lions'?",
+    "options": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Ireland"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 86,
+    "question": "Which player scored a record 91 goals in a calendar year in 2012?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Neymar",
+      "Robert Lewandowski"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 87,
+    "question": "Who scored the winning goal in the 2010 World Cup final?",
+    "options": [
+      "Xavi",
+      "David Villa",
+      "Andrés Iniesta",
+      "Fernando Torres"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 88,
+    "question": "Who scored the winning goal for Germany in the 2014 World Cup final?",
+    "options": [
+      "Thomas Müller",
+      "Miroslav Klose",
+      "André Schürrle",
+      "Mario Götze"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 89,
+    "question": "Which country won the 2006 World Cup?",
+    "options": [
+      "Italy",
+      "France",
+      "Germany",
+      "Portugal"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 90,
+    "question": "Which two countries co-hosted the 2002 World Cup?",
+    "options": [
+      "China and Japan",
+      "Japan and South Korea",
+      "South Korea and China",
+      "Japan and Thailand"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 91,
+    "question": "Which Brazilian star, famous for his smile and tricks, won the Ballon d'Or in 2005?",
+    "options": [
+      "Kaká",
+      "Ronaldo",
+      "Ronaldinho",
+      "Rivaldo"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 92,
+    "question": "Which Italian goalkeeper spent 17 years at Juventus and won the 2006 World Cup?",
+    "options": [
+      "Gianluigi Donnarumma",
+      "Iker Casillas",
+      "Manuel Neuer",
+      "Gianluigi Buffon"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 93,
+    "question": "Who is Arsenal's all-time top goalscorer?",
+    "options": [
+      "Thierry Henry",
+      "Ian Wright",
+      "Robin van Persie",
+      "Dennis Bergkamp"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 94,
+    "question": "Who is Manchester United's all-time top goalscorer?",
+    "options": [
+      "Bobby Charlton",
+      "Wayne Rooney",
+      "Ryan Giggs",
+      "Cristiano Ronaldo"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 95,
+    "question": "Who is Real Madrid's all-time top goalscorer?",
+    "options": [
+      "Raúl",
+      "Karim Benzema",
+      "Cristiano Ronaldo",
+      "Alfredo Di Stéfano"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 96,
+    "question": "Who is Barcelona's all-time top goalscorer?",
+    "options": [
+      "Luis Suárez",
+      "Xavi",
+      "Ronaldinho",
+      "Lionel Messi"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 97,
+    "question": "Which country hosted the 2014 World Cup?",
+    "options": [
+      "Brazil",
+      "Russia",
+      "Germany",
+      "South Africa"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 98,
+    "question": "In which year did Lionel Messi join Inter Miami?",
+    "options": [
+      "2021",
+      "2023",
+      "2022",
+      "2024"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 99,
+    "question": "Which country won the 2024 Copa América?",
+    "options": [
+      "Colombia",
+      "Brazil",
+      "Argentina",
+      "Uruguay"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 100,
+    "question": "Which country won the 2023 Africa Cup of Nations, played at home in early 2024?",
+    "options": [
+      "Nigeria",
+      "Egypt",
+      "Senegal",
+      "Ivory Coast"
+    ],
+    "answer": 3
+  }
+]

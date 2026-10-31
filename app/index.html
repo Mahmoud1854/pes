@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f5f0" />
+    <meta
+      name="description"
+      content="Answer a daily football quiz, bank coins, collect cards of your friends and build a 4-3-3 lineup."
+    />
+    <title>PES</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="page-home" data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./index.html" aria-label="Football Friends home">
+          <span class="brand__mark" aria-hidden="true">FF</span>
+          <span class="brand__text">
+            <span>Football</span>
+            <span>Friends</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./index.html" aria-current="page">Home</a>
+          <a href="./trivia.html">Trivia</a>
+          <a href="./store.html">Store</a>
+          <a href="./collection.html">Collection</a>
+          <a href="./lineup.html">Lineup</a>
+        </nav>
+
+        <div class="coin-chip" aria-label="Coin balance">
+          <svg class="coin-chip__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" fill="#f0c75e"></circle>
+            <circle
+              cx="12"
+              cy="12"
+              r="7"
+              fill="none"
+              stroke="#9a6406"
+              stroke-width="1.5"
+            ></circle>
+            <path
+              d="M12 8.2l1.1 2.3 2.5.3-1.8 1.8.4 2.5-2.2-1.2-2.2 1.2.4-2.5-1.8-1.8 2.5-.3z"
+              fill="#9a6406"
+            ></path>
+          </svg>
+          <span class="coin-chip__value" data-coin-balance>0</span>
+          <span class="sr-only">coins</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main" id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            <span data-today-label>Today</span>
+            <span class="eyebrow__separator" aria-hidden="true">/</span>
+            Daily club
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            Collect the crew.<br />Build the XI.
+          </h1>
+
+          <p class="hero__lede">
+            Answer three football questions a day, bank coins, and open packs
+            for cards of your friends. Then put your best eleven on the pitch.
+          </p>
+
+          <aside
+            class="daily-panel"
+            data-daily-card
+            data-state="ready"
+            aria-labelledby="daily-title"
+          >
+            <div class="daily-panel__head">
+              <h2 class="daily-panel__title" id="daily-title">Today's set</h2>
+              <span class="daily-panel__count">
+                <span data-home-answered>0</span> / 3
+              </span>
+            </div>
+
+            <div class="floodlights" data-pips aria-label="0 of 3 answered">
+              <span class="floodlight is-current"></span>
+              <span class="floodlight"></span>
+              <span class="floodlight"></span>
+            </div>
+
+            <p class="daily-panel__message" data-daily-message>
+              Three questions. 150 coins for each correct answer.
+            </p>
+
+            <a
+              class="btn btn--primary btn--wide"
+              data-daily-cta
+              href="./trivia.html"
+            >
+              <span data-cta-label>Start today's trivia</span>
+              <svg class="icon" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M4 10h11M11 5l5 5-5 5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </a>
+          </aside>
+
+          <aside
+            class="weekly-panel"
+            data-weekly-card
+            data-state="locked"
+            aria-labelledby="weekly-title"
+          >
+            <div class="weekly-panel__head">
+              <div>
+                <h2 class="weekly-panel__title" id="weekly-title">
+                  Free Thursday pack
+                </h2>
+                <p class="weekly-panel__text" data-weekly-status>
+                  One free card every Thursday. Check back then.
+                </p>
+              </div>
+              <span class="weekly-panel__badge" data-weekly-badge>THU</span>
+            </div>
+            <button
+              class="btn btn--ghost btn--wide"
+              type="button"
+              data-weekly-claim
+              disabled
+            >
+              <span data-weekly-label>Free pack on Thursday</span>
+              <svg class="icon" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M4 10h11M11 5l5 5-5 5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </aside>
+        </div>
+
+        <div class="hero__art">
+          <figure class="card-showcase">
+            <img
+              class="card-showcase__image"
+              src="../cards/Jasolise%20%28unique%20card%29.jpg"
+              alt="Jasolise, a unique football friend card rated 108"
+              width="470"
+              height="660"
+              fetchpriority="high"
+            />
+            <figcaption class="card-showcase__caption">
+              <span class="card-showcase__tag">Unique</span>
+              <span>One of 15 in the club pool.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="how" aria-labelledby="how-title">
+        <div class="how__head">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            The loop
+          </p>
+          <h2 class="how__title" id="how-title">How the club works.</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__number" aria-hidden="true">01</span>
+            <div>
+              <h3 class="step__title">Answer the daily three</h3>
+              <p class="step__text">
+                Three football questions. Get one right, bank 150 coins.
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">02</span>
+            <div>
+              <h3 class="step__title">Open packs</h3>
+              <p class="step__text">
+                Spend 90 coins on a pack, or claim the free Thursday pack.
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">03</span>
+            <div>
+              <h3 class="step__title">Build your XI</h3>
+              <p class="step__text">
+                Fill every slot in a 4-3-3 with the cards you own.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Progress saves in this browser.</p>
+        <p>Football Friends <span aria-hidden="true">·</span> 2026</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/home.js"></script>
+  </body>
+</html>
