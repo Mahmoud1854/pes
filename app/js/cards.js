@@ -1,5 +1,5 @@
-const CARDS_URL = new URL("../../data/cards.json", import.meta.url);
-const ASSET_BASE = new URL("../../", import.meta.url);
+const CARDS_URL = new URL("../data/cards.json", import.meta.url);
+const ASSET_BASE = new URL("../", import.meta.url);
 
 function isValidCard(card) {
   return (

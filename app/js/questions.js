@@ -1,4 +1,4 @@
-const QUESTIONS_URL = new URL("../../data/questions.json", import.meta.url);
+const QUESTIONS_URL = new URL("../data/questions.json", import.meta.url);
 
 function isValidQuestion(question) {
   return (
