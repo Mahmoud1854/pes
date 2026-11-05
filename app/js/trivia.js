@@ -4,7 +4,7 @@ import { loadQuestions } from "./questions.js";
 import { initSharedUI, refreshCoinDisplay } from "./ui.js";
 
 const COINS_PER_CORRECT = 150;
-const DAILY_QUESTION_COUNT = 3;
+const DAILY_QUESTION_COUNT = 4;
 const ARROW = `<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 const root = document.querySelector("[data-trivia-root]");

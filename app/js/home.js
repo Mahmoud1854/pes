@@ -4,7 +4,7 @@ import { dateKey, humanDate, isThursday } from "./dates.js";
 import { initSharedUI, refreshCoinDisplay } from "./ui.js";
 import { showReveal } from "./reveal.js";
 
-const DAILY_QUESTION_COUNT = 3;
+const DAILY_QUESTION_COUNT = 4;
 
 const weekly = {
   cards: [],
@@ -40,7 +40,7 @@ async function bootWeekly() {
 
 function maybeGrantWelcomeCard() {
   const before = loadState();
-  if (before.welcomeCardClaimed) return;
+  if (before.welcomeCardClaimed === true) return;
 
   const card = welcomeCard(weekly.cards);
   if (!card) return;
@@ -49,7 +49,7 @@ function maybeGrantWelcomeCard() {
   let granted = false;
 
   updateState((state) => {
-    if (state.welcomeCardClaimed) return state;
+    if (state.welcomeCardClaimed === true) return state;
 
     state.welcomeCardClaimed = true;
     if (!state.ownedCardIds.includes(card.id)) {
@@ -222,7 +222,7 @@ function renderDailyPanel(state) {
         return `<span class="floodlight ${stateClass}"></span>`;
       }
     ).join("");
-    pips.setAttribute("aria-label", `${answered} of 3 answered`);
+    pips.setAttribute("aria-label", `${answered} of ${DAILY_QUESTION_COUNT} answered`);
   }
 
   const message = panel.querySelector("[data-daily-message]");
@@ -239,13 +239,13 @@ function renderDailyPanel(state) {
     if (ctaLabel) ctaLabel.textContent = "Review today's set";
   } else if (answered > 0) {
     if (message) {
-      message.textContent = `${answered} of 3 answered. Finish the set to bank the rest.`;
+      message.textContent = `${answered} of ${DAILY_QUESTION_COUNT} answered. Finish the set to bank the rest.`;
     }
     if (ctaLabel) ctaLabel.textContent = "Continue trivia";
   } else {
     if (message) {
       message.textContent =
-        "Three questions. 150 coins for each correct answer.";
+        `${DAILY_QUESTION_COUNT} questions. 150 coins for each correct answer.`;
     }
     if (ctaLabel) ctaLabel.textContent = "Start today's trivia";
   }

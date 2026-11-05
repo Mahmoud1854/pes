@@ -13,7 +13,7 @@ export function dayIndex(date = new Date()) {
   );
 }
 
-export function getDailyQuestions(questions, date = new Date(), count = 3) {
+export function getDailyQuestions(questions, date = new Date(), count = 4) {
   if (!Array.isArray(questions) || questions.length === 0) return [];
 
   const total = questions.length;
