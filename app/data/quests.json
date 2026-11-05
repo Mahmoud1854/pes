@@ -1,0 +1,13 @@
+[
+  {
+    "id": "high_rated",
+    "name": "Collect high-rated players",
+    "type": "count_owned_with_min_rating",
+    "minRating": 100,
+    "tiers": [
+      { "count": 2, "reward": 200 },
+      { "count": 3, "reward": 300 },
+      { "count": 5, "reward": 500 }
+    ]
+  }
+]

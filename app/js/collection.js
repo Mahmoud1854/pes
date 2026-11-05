@@ -1,4 +1,10 @@
-import { loadCards, cardImageUrl, escapeHtml } from "./cards.js";
+import {
+  loadCards,
+  cardImageUrl,
+  escapeHtml,
+  playerCards,
+  managerCards,
+} from "./cards.js";
 import { loadState } from "./storage.js";
 import { initSharedUI } from "./ui.js";
 
@@ -30,7 +36,7 @@ async function boot() {
 function renderCollection() {
   root.removeAttribute("aria-busy");
 
-  const cards = [...app.cards].sort((a, b) => {
+  const cards = playerCards(app.cards).sort((a, b) => {
     if (a.rating !== b.rating) return b.rating - a.rating;
     return a.name.localeCompare(b.name);
   });
@@ -38,6 +44,13 @@ function renderCollection() {
   const ownedCount = cards.filter((card) => app.owned.has(card.id)).length;
   const total = cards.length;
   const percent = total === 0 ? 0 : Math.round((ownedCount / total) * 100);
+
+  const managers = managerCards(app.cards).sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+  const ownedManagers = managers.filter((card) =>
+    app.owned.has(card.id)
+  ).length;
 
   const items = cards.map(renderCard).join("");
 
@@ -58,6 +71,91 @@ function renderCollection() {
     <ul class="collection-grid">
       ${items}
     </ul>
+
+    ${
+      managers.length > 0
+        ? `
+          <section class="collection-section" aria-labelledby="managers-title">
+            <header class="collection-section__head">
+              <div>
+                <p class="eyebrow">
+                  <span class="eyebrow__dot" aria-hidden="true"></span>
+                  Staff
+                </p>
+                <h2 class="collection-section__title" id="managers-title">
+                  Managers
+                </h2>
+              </div>
+              <p class="collection-section__text">
+                ${ownedManagers} of ${managers.length} collected. Managers come only from club packages and do not count toward the player total.
+              </p>
+            </header>
+
+            <ul class="collection-grid collection-grid--managers">
+              ${managers.map(renderManagerCard).join("")}
+            </ul>
+          </section>
+        `
+        : ""
+    }
+  `;
+}
+
+function renderManagerCard(card) {
+  const owned = app.owned.has(card.id);
+  const alt = owned
+    ? `${escapeHtml(card.name)}, manager of ${escapeHtml(card.club)}`
+    : "";
+  const image = cardImageUrl(card);
+
+  if (!owned) {
+    return `
+      <li class="collection-card is-manager is-locked">
+        <figure class="collection-card__figure">
+          <div class="collection-card__frame">
+            <img
+              src="${image}"
+              alt=""
+              width="470"
+              height="660"
+              loading="lazy"
+              aria-hidden="true"
+            />
+            <div class="collection-card__lock">
+              ${LOCK}
+              <span>Locked</span>
+            </div>
+          </div>
+          <figcaption class="collection-card__caption">
+            <span class="collection-card__name">${escapeHtml(card.name)}</span>
+            <span class="collection-card__meta">Not collected</span>
+          </figcaption>
+        </figure>
+      </li>
+    `;
+  }
+
+  return `
+    <li class="collection-card is-manager">
+      <figure class="collection-card__figure">
+        <div class="collection-card__frame">
+          <img
+            src="${image}"
+            alt="${alt}"
+            width="470"
+            height="660"
+            loading="lazy"
+          />
+          <span class="collection-card__tag">Manager</span>
+        </div>
+        <figcaption class="collection-card__caption">
+          <span class="collection-card__name">${escapeHtml(card.name)}</span>
+          <span class="collection-card__meta">
+            ${escapeHtml(card.club)} · Manager
+          </span>
+        </figcaption>
+      </figure>
+    </li>
   `;
 }
 

@@ -2,15 +2,22 @@ const CARDS_URL = new URL("../data/cards.json", import.meta.url);
 const ASSET_BASE = new URL("../", import.meta.url);
 
 function isValidCard(card) {
+  if (
+    !card ||
+    !Number.isInteger(card.id) ||
+    typeof card.name !== "string" ||
+    typeof card.club !== "string" ||
+    typeof card.image !== "string"
+  ) {
+    return false;
+  }
+
+  if (card.type === "manager") return true;
+
   return (
-    card &&
-    Number.isInteger(card.id) &&
-    typeof card.name === "string" &&
-    typeof card.club === "string" &&
     typeof card.position === "string" &&
     Number.isFinite(card.rating) &&
-    (card.type === "unique" || card.type === "basic") &&
-    typeof card.image === "string"
+    (card.type === "unique" || card.type === "basic")
   );
 }
 
@@ -47,6 +54,14 @@ export function cardImageUrl(card) {
   return new URL(card.image, ASSET_BASE).href;
 }
 
+export function playerCards(cards) {
+  return cards.filter((card) => card.type !== "manager");
+}
+
+export function managerCards(cards) {
+  return cards.filter((card) => card.type === "manager");
+}
+
 export function uniqueCards(cards) {
   return cards.filter((card) => card.type === "unique");
 }
@@ -55,9 +70,25 @@ export function basicCards(cards) {
   return cards.filter((card) => card.type === "basic");
 }
 
-export function pickPackCard(cards, random = Math.random) {
-  const unique = uniqueCards(cards);
-  const basic = basicCards(cards);
+export function welcomeCard(cards) {
+  return (
+    cards.find(
+      (card) => card.welcome === true && card.type !== "manager"
+    ) ?? null
+  );
+}
+
+export function pickPackCard(
+  cards,
+  ownedIds = new Set(),
+  random = Math.random
+) {
+  const players = playerCards(cards);
+  const unowned = players.filter((card) => !ownedIds.has(card.id));
+  const source = unowned.length > 0 ? unowned : players;
+
+  const unique = uniqueCards(source);
+  const basic = basicCards(source);
   const wantUnique = random() < 0.2;
 
   const pool =

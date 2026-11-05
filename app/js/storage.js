@@ -6,6 +6,7 @@ export function createDefaultState() {
     coins: 0,
     ownedCardIds: [],
     lineup: {},
+    managerId: null,
     trivia: {
       date: null,
       questionIds: [],
@@ -13,7 +14,34 @@ export function createDefaultState() {
       completed: false,
     },
     lastWeeklyPackDate: null,
+    welcomeCardClaimed: false,
+    openedPackages: [],
+    claimedQuestTiers: {},
   };
+}
+
+function normalizeClaimedQuestTiers(raw) {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return {};
+
+  return Object.fromEntries(
+    Object.entries(raw)
+      .filter(([, tiers]) => Array.isArray(tiers))
+      .map(([questId, tiers]) => [
+        questId,
+        [...new Set(tiers.filter(Number.isInteger))],
+      ])
+  );
+}
+
+function needsMigration(raw) {
+  return (
+    typeof raw.welcomeCardClaimed !== "boolean" ||
+    !Array.isArray(raw.openedPackages) ||
+    !(raw.managerId === null || Number.isInteger(raw.managerId)) ||
+    !raw.claimedQuestTiers ||
+    typeof raw.claimedQuestTiers !== "object" ||
+    Array.isArray(raw.claimedQuestTiers)
+  );
 }
 
 function normalizeState(raw) {
@@ -50,6 +78,7 @@ function normalizeState(raw) {
       raw.lineup && typeof raw.lineup === "object" && !Array.isArray(raw.lineup)
         ? { ...raw.lineup }
         : {},
+    managerId: Number.isInteger(raw.managerId) ? raw.managerId : null,
     trivia: {
       date: typeof trivia.date === "string" ? trivia.date : fallback.trivia.date,
       questionIds: Array.isArray(trivia.questionIds)
@@ -62,6 +91,11 @@ function normalizeState(raw) {
       typeof raw.lastWeeklyPackDate === "string"
         ? raw.lastWeeklyPackDate
         : fallback.lastWeeklyPackDate,
+    welcomeCardClaimed: Boolean(raw.welcomeCardClaimed),
+    openedPackages: Array.isArray(raw.openedPackages)
+      ? [...new Set(raw.openedPackages.filter((id) => typeof id === "string"))]
+      : [],
+    claimedQuestTiers: normalizeClaimedQuestTiers(raw.claimedQuestTiers),
   };
 }
 
@@ -75,7 +109,15 @@ export function loadState() {
   try {
     const saved = window.localStorage.getItem(STORAGE_KEY);
     if (!saved) return createDefaultState();
-    return normalizeState(JSON.parse(saved));
+
+    const raw = JSON.parse(saved);
+    const next = normalizeState(raw);
+
+    if (raw && typeof raw === "object" && needsMigration(raw)) {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    }
+
+    return next;
   } catch (error) {
     console.warn("Could not read saved progress.", error);
     return createDefaultState();

@@ -1,74 +1,85 @@
-# Football Friends Cards: Milestones
+# Football Friends Cards: Milestones for Edits (v2)
 
-Build plan based on the PRD. Each milestone ends with something you can open and test, and each one builds on the last.
+Instructions for the AI agent. Read `PRD-edits.md` first. Work on **one milestone at a time**. At the end of each milestone, write a short summary of what you changed, how to test it, and which defaults from the PRD's "Open items" you used. Then stop and wait for the owner to say "next".
 
-## Milestone 1: Project setup and data
+General rules for every milestone:
 
-- Build the small save/load helper that keeps these in localStorage: coins, owned cards, lineup, today's trivia progress, and the date of the last weekly pack claim.
+- Plain HTML, CSS and JavaScript only. Keep the current look and file structure.
+- Keep old saved progress working. New save fields need defaults.
+- Keep all game data in JSON files, not inside the logic.
+- Do not change anything that is not part of the current milestone.
 
-**Done when:** you can save a value in the browser, refresh, and still see it.
+## Milestone 0: Read the code (no changes)
 
-## Milestone 2: Trivia page
+- Read every file in the project.
+- Write a short report: the file list, where coins, owned cards, lineup and trivia are saved, how packs are opened, and how the weekly pack and daily trivia dates are handled.
+- List which parts the update will touch.
+- List any questions you have. Check the PRD's "Open items" and tell the owner which ones are still unanswered.
 
-- Show 3 questions a day, one at a time, with 4 options.
-- Correct answer gives +150 coins. Wrong answer gives nothing.
-- After the 3 questions are answered, lock the page until the next day.
+**Done when:** the owner has read the report and said "next". Nothing in the code is changed.
 
-**Done when:** answering correctly raises your coins, and refreshing does not let you answer again.
+## Milestone 1: Data and save migration
 
-## Milestone 3: Store and pack opening
+- Replace the trivia questions with the contents of `questions_easy.json` (keep the file name the game already uses, and the same format).
+- Create `packages.json` and `quests.json` using the structures in the PRD (leave the bundle player lists empty if they are not provided yet).
+- Add the new save fields with safe defaults: `welcomeCardClaimed`, `openedPackages`, `claimedQuestTiers`.
+- Add a small migration so an old save loads without errors and keeps all coins, cards and progress.
+- Add a `type` check in the card code so managers are always excluded from random pulls and from the "15 cards" logic. Add `type: "manager"` entries to `cards.json` only when the owner supplies the manager details.
 
-- One button that costs 90 coins and gives 1 card.
-- Odds: 20% chance of a unique card (3 cards, equal chance) and 80% chance of a basic card (12 cards, equal chance).
-- Show the card with a simple flip or reveal and save it to the collection.
-- Duplicates do nothing.
+**Done when:** the game loads with an old save, nothing is lost, the trivia shows the new easy questions, and the new fields exist in storage.
 
-**Done when:** coins go down by 90, a card appears, and it is still owned after a refresh.
+## Milestone 2: Three packages in the Store
 
-**Testing tip:** add a hidden "give me 1,000 coins" button while testing, and remove it before sharing the site.
+- Read packages from `packages.json` and show them on the Store page as three cards or buttons.
+- Rename the existing 90-coin pack to **College Package 1**. Keep its price and its odds (20% unique, 80% basic) exactly as they are.
+- Show the Real Madrid Package and the Barcelona Package with the price 1000 coins. The buy buttons can be disabled for now if their contents are not ready.
 
-## Milestone 4: Collection page
+**Done when:** the Store shows three packages with the right names and prices, and College Package 1 works exactly as before.
 
-- Show all 15 cards.
-- Owned cards appear in full. Cards not owned appear locked or greyed out.
+## Milestone 3: Free card
 
-**Done when:** a new card opened in the store shows up unlocked here.
+- Give each player one free card, using the default in the PRD (a one-time welcome card, random basic card) unless the owner has said otherwise.
+- Show it with the same reveal used for pack opening and save it to the collection.
+- Use the `welcomeCardClaimed` flag so it can never be claimed twice.
 
-## Milestone 5: Home page and weekly pack
+**Done when:** a fresh save gets exactly one free card, reloading does not give another, and an old save still works.
 
-- Show the coin balance and links to the other pages.
-- Add a "claim free pack" button that works only on Thursday, once per Thursday.
+## Milestone 4: Bundle packages (Real Madrid and Barcelona)
 
-**Done when:** the button is disabled on other days and works once on Thursday. Test it by temporarily changing the day in the code.
+- Make the 1000-coin packages work: take 1000 coins, give **every** player in the package's `cardIds` at once, and also the manager in `managerId`.
+- Each package can be bought **only once**: record it in `openedPackages`, then show "Owned" and disable the button.
+- If the player does not have 1000 coins, show how many more are needed and take nothing.
+- Show all received cards together after buying (a simple grid or list is fine).
+- If any received card is already owned, keep it and do not charge extra.
+- Do not guess players or managers. If the lists in `packages.json` are empty, tell the owner exactly what to fill in (card ids and manager id) and use clearly marked placeholders.
 
-## Milestone 6: Lineup page
+**Done when:** buying a bundle takes 1000 coins once, adds all its players and the manager to the collection, and the second purchase is blocked.
 
-- Fixed 4-3-3 layout with 11 slots.
-- The player picks an owned card for each slot.
-- Any card can go in any slot, and each card can be used only once.
-- Show the team rating (the average rating of the 11 cards).
-- Save the lineup.
+## Milestone 5: Managers in the Collection
 
-**Done when:** you can fill the team, see the rating, and the lineup is still there after a refresh.
+- Add a separate **Managers** section to the Collection page. Owned managers show in full and the rest are locked.
+- Managers must not change the team rating, must not appear in normal pack pulls, and must not count as players for the lineup.
+- Follow the PRD default: managers are collection only. If the owner has chosen a manager slot for the lineup, add it here without changing the 4-3-3 rules.
 
-## Milestone 7: Polish
+**Done when:** buying a bundle makes its manager appear unlocked in the Managers section, and nothing else in the game changes.
 
-- Clean and simple design, mobile-first.
-- Check every page on a real phone.
-- Add the special effect for the 3 unique cards.
-- Optional: add the backup code that moves progress to a new device.
+## Milestone 6: Quests
 
-**Done when:** all five pages look good on a phone screen.
+- Build a generic quest system driven by `quests.json`: a quest type, a goal, tiers and rewards.
+- Add a **Quests** page and a link to it from Home.
+- Implement **Quest 1**: count the player's different owned player cards with OVR 100 or higher (managers and duplicates do not count). Tiers: 2 cards = 200 coins, 3 cards = 300 coins, 5 cards = 500 coins.
+- Show progress (for example "You own 3 cards with OVR 100 or higher") and a **Claim** button for each tier that is ready.
+- Each tier can be claimed once. Save claimed tiers in `claimedQuestTiers`. Add the coins when claimed.
+- Do not build Quests 2 and 3. Make it easy to add them later by only editing `quests.json` (and adding a new quest type in code if a new rule is needed).
 
-## Milestone 8: Real cards and launch
+**Done when:** owning 2, 3 and 5 cards with OVR 100 or higher unlocks the matching claims, each claim pays the right amount once, and a reload does not allow a second claim.
 
-- Replace the placeholders with the final 15 cards and images, all at the same size.
-- Remove any testing buttons.
-- Put the site on GitHub Pages or Netlify.
-- Send the link to your friends and fix what they find in the first few days.
+## Milestone 7: Testing and cleanup
 
-**Done when:** every friend can open the link and play on their own phone.
+- Test with an old save and with a brand new save.
+- Run through the PRD's acceptance checklist, one line at a time, and report which items pass.
+- Check every page on a phone-size screen.
+- Remove any temporary test buttons (for example "give me 1000 coins") that were added during testing.
+- Write a short list of what the owner still needs to provide (bundle players, manager details, Quests 2 and 3).
 
-## Note
-
-Do not wait for the final card images. Milestones 1 to 6 work fine with the sample card repeated a few times, so the designer has time to finish the rest.
+**Done when:** every item in the PRD checklist passes and the owner confirms the game works on a phone.

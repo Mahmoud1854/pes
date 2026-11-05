@@ -133,5 +133,137 @@
     "rating": 86,
     "type": "basic",
     "image": "cards/valverde.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Jude Bellingham",
+    "club": "Real Madrid",
+    "position": "AMF",
+    "rating": 101,
+    "type": "unique",
+    "image": "cards/bellingham%20%28uniqe%20card%29.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Andreas Christensen",
+    "club": "Barcelona",
+    "position": "CB",
+    "rating": 98,
+    "type": "basic",
+    "image": "cards/christensen.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Pau Cubarsí",
+    "club": "Barcelona",
+    "position": "CB",
+    "rating": 85,
+    "type": "basic",
+    "image": "cards/cubarsi.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Anthony Gordon",
+    "club": "Barcelona",
+    "position": "LWF",
+    "rating": 100,
+    "type": "basic",
+    "image": "cards/gordon.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Hansi Flick",
+    "club": "Barcelona",
+    "type": "manager",
+    "image": "cards/hansi%20flick%20%28manager%29.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Dean Huijsen",
+    "club": "Real Madrid",
+    "position": "CB",
+    "rating": 100,
+    "type": "basic",
+    "image": "cards/hiujsen.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Jasolise (Free)",
+    "club": "Bayern Munich",
+    "position": "AMF",
+    "rating": 102,
+    "type": "unique",
+    "welcome": true,
+    "image": "cards/jasolise%20free%20card.jpg"
+  },
+  {
+    "id": 23,
+    "name": "José Mourinho",
+    "club": "Real Madrid",
+    "type": "manager",
+    "image": "cards/jose%20morinho%20%28manager%29.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Lamine Yamal",
+    "club": "Barcelona",
+    "position": "RWF",
+    "rating": 106,
+    "type": "basic",
+    "image": "cards/lamine%20yamal.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Andriy Lunin",
+    "club": "Real Madrid",
+    "position": "GK",
+    "rating": 99,
+    "type": "basic",
+    "image": "cards/lunin.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Éder Militão",
+    "club": "Real Madrid",
+    "position": "CB",
+    "rating": 100,
+    "type": "basic",
+    "image": "cards/militao.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Kylian Mbappé",
+    "club": "Real Madrid",
+    "position": "CF",
+    "rating": 101,
+    "type": "unique",
+    "image": "cards/mpabbe%20%28uniqe%20card%29.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Pedri",
+    "club": "Barcelona",
+    "position": "CMF",
+    "rating": 86,
+    "type": "basic",
+    "image": "cards/pedri.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Raphinha",
+    "club": "Barcelona",
+    "position": "AMF",
+    "rating": 102,
+    "type": "unique",
+    "image": "cards/raphinia%20%28uniqe%20card%29.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Vinícius Júnior",
+    "club": "Real Madrid",
+    "position": "LWF",
+    "rating": 101,
+    "type": "unique",
+    "image": "cards/vini%20jr%20%28uniqe%20card%29.jpg"
   }
 ]

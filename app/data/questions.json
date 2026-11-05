@@ -1,1101 +1,1101 @@
 [
   {
     "id": 1,
-    "question": "Which country won the 2022 FIFA World Cup?",
+    "question": "How many players from one team are on the pitch at the same time?",
     "options": [
-      "Argentina",
-      "France",
-      "Croatia",
-      "Morocco"
+      "11",
+      "9",
+      "10",
+      "12"
     ],
     "answer": 0
   },
   {
     "id": 2,
-    "question": "Which country hosted the 2022 World Cup?",
+    "question": "How many minutes is a normal football match, without extra time?",
     "options": [
-      "Russia",
-      "Qatar",
-      "Brazil",
-      "Saudi Arabia"
+      "60",
+      "90",
+      "80",
+      "100"
     ],
     "answer": 1
   },
   {
     "id": 3,
-    "question": "Which country has won the most World Cups?",
+    "question": "Which part of the body can outfield players NOT use to touch the ball?",
     "options": [
-      "Germany",
-      "Italy",
-      "Brazil",
-      "Argentina"
+      "Head",
+      "Knees",
+      "Hands",
+      "Chest"
     ],
     "answer": 2
   },
   {
     "id": 4,
-    "question": "Who scored the famous 'Hand of God' goal at the 1986 World Cup?",
+    "question": "Which card means a player must leave the match?",
     "options": [
-      "Pelé",
-      "Zinedine Zidane",
-      "Johan Cruyff",
-      "Diego Maradona"
+      "Yellow card",
+      "Green card",
+      "Blue card",
+      "Red card"
     ],
     "answer": 3
   },
   {
     "id": 5,
-    "question": "Which country won the very first World Cup in 1930?",
+    "question": "Which player is allowed to use their hands inside their own penalty area?",
     "options": [
-      "Uruguay",
-      "Brazil",
-      "Argentina",
-      "Italy"
+      "Goalkeeper",
+      "Striker",
+      "Defender",
+      "Midfielder"
     ],
     "answer": 0
   },
   {
     "id": 6,
-    "question": "Which country won the 2018 World Cup in Russia?",
+    "question": "What do you get when the ball goes into the net?",
     "options": [
-      "Croatia",
-      "France",
-      "Belgium",
-      "England"
+      "A foul",
+      "A goal",
+      "A corner",
+      "A throw-in"
     ],
     "answer": 1
   },
   {
     "id": 7,
-    "question": "Who scored a hat-trick in the 2022 World Cup final?",
+    "question": "What is a kick taken from the corner of the pitch called?",
     "options": [
-      "Lionel Messi",
-      "Ángel Di María",
-      "Kylian Mbappé",
-      "Olivier Giroud"
+      "Free kick",
+      "Penalty",
+      "Corner kick",
+      "Goal kick"
     ],
     "answer": 2
   },
   {
     "id": 8,
-    "question": "Which country hosted the 2018 World Cup?",
+    "question": "Which player stays in the goal to stop shots?",
     "options": [
-      "Qatar",
-      "Germany",
-      "Brazil",
-      "Russia"
+      "Striker",
+      "Winger",
+      "Captain",
+      "Goalkeeper"
     ],
     "answer": 3
   },
   {
     "id": 9,
-    "question": "Which country won the 2010 World Cup?",
+    "question": "Which player's main job is to score goals?",
     "options": [
-      "Spain",
-      "Netherlands",
-      "Germany",
-      "Uruguay"
+      "Striker",
+      "Goalkeeper",
+      "Referee",
+      "Defender"
     ],
     "answer": 0
   },
   {
     "id": 10,
-    "question": "Which country won the 2014 World Cup?",
+    "question": "Who controls the match and shows the cards?",
     "options": [
-      "Argentina",
-      "Germany",
-      "Netherlands",
-      "Brazil"
+      "Coach",
+      "Referee",
+      "Captain",
+      "Fan"
     ],
     "answer": 1
   },
   {
     "id": 11,
-    "question": "The 2026 World Cup was hosted by the USA, Canada and which other country?",
+    "question": "What is the shape of a football pitch?",
     "options": [
-      "Brazil",
-      "Argentina",
-      "Mexico",
-      "Costa Rica"
+      "Circle",
+      "Triangle",
+      "Rectangle",
+      "Square"
     ],
     "answer": 2
   },
   {
     "id": 12,
-    "question": "How many World Cups did Pelé win with Brazil?",
+    "question": "Which card is a warning to a player?",
     "options": [
-      "2",
-      "4",
-      "5",
-      "3"
+      "Red card",
+      "Green card",
+      "White card",
+      "Yellow card"
     ],
     "answer": 3
   },
   {
     "id": 13,
-    "question": "Which country won Euro 2016?",
+    "question": "What do we call a kick from the penalty spot?",
     "options": [
-      "Portugal",
-      "France",
-      "Germany",
-      "Wales"
+      "Penalty kick",
+      "Corner kick",
+      "Throw-in",
+      "Goal kick"
     ],
     "answer": 0
   },
   {
     "id": 14,
-    "question": "Which country won Euro 2020 (played in 2021)?",
+    "question": "What do players wear to protect their legs?",
     "options": [
-      "England",
-      "Italy",
-      "Spain",
-      "Denmark"
+      "Gloves",
+      "Shin guards",
+      "Helmets",
+      "Belts"
     ],
     "answer": 1
   },
   {
     "id": 15,
-    "question": "Which country won Euro 2024?",
+    "question": "How many halves are in a normal football match?",
     "options": [
-      "England",
-      "France",
-      "Spain",
-      "Germany"
+      "1",
+      "3",
+      "2",
+      "4"
     ],
     "answer": 2
   },
   {
     "id": 16,
-    "question": "Senegal won the 2022 Africa Cup of Nations. Which country did they beat in the final?",
+    "question": "What is the break between the two halves called?",
     "options": [
-      "Nigeria",
-      "Morocco",
-      "Algeria",
-      "Egypt"
+      "Full-time",
+      "Extra time",
+      "Time-out",
+      "Half-time"
     ],
     "answer": 3
   },
   {
     "id": 17,
-    "question": "Which country has won the most Africa Cup of Nations titles?",
+    "question": "What do we call a match that ends with the same score for both teams?",
     "options": [
-      "Egypt",
-      "Cameroon",
-      "Ghana",
-      "Nigeria"
+      "A draw",
+      "A win",
+      "A loss",
+      "A penalty"
     ],
     "answer": 0
   },
   {
     "id": 18,
-    "question": "Egypt hosted the 2019 Africa Cup of Nations. Which country won it?",
+    "question": "How many points does a team get for a win in a league?",
     "options": [
-      "Senegal",
-      "Algeria",
-      "Nigeria",
-      "Ivory Coast"
+      "1",
+      "3",
+      "2",
+      "4"
     ],
     "answer": 1
   },
   {
     "id": 19,
-    "question": "Mohamed Salah joined Liverpool in 2017 from which club?",
+    "question": "How many points does a team get for a draw in a league?",
     "options": [
-      "Chelsea",
-      "Fiorentina",
-      "Roma",
-      "Basel"
+      "0",
+      "2",
+      "1",
+      "3"
     ],
     "answer": 2
   },
   {
     "id": 20,
-    "question": "Which club is Al Ahly's biggest rival in Cairo?",
+    "question": "Who is the person who leads the team from the side of the pitch?",
     "options": [
-      "Pyramids",
-      "Ismaily",
-      "Al Masry",
-      "Zamalek"
+      "Referee",
+      "Captain",
+      "Linesman",
+      "Manager"
     ],
     "answer": 3
   },
   {
     "id": 21,
-    "question": "Which African country was the first to play at a World Cup, in 1934?",
+    "question": "Which player wears the captain's armband?",
     "options": [
-      "Egypt",
-      "Morocco",
-      "Nigeria",
-      "Cameroon"
+      "The captain",
+      "The referee",
+      "The manager",
+      "The fan"
     ],
     "answer": 0
   },
   {
     "id": 22,
-    "question": "Which Egyptian legend holds the record for most appearances for the national team?",
+    "question": "The FIFA World Cup is played in which sport?",
     "options": [
-      "Essam El-Hadary",
-      "Ahmed Hassan",
-      "Mohamed Aboutrika",
-      "Hossam Hassan"
+      "Basketball",
+      "Football",
+      "Tennis",
+      "Rugby"
     ],
     "answer": 1
   },
   {
     "id": 23,
-    "question": "Which club has won the most CAF Champions League titles?",
+    "question": "How often is the World Cup played?",
     "options": [
-      "Zamalek",
-      "Espérance",
-      "Al Ahly",
-      "TP Mazembe"
+      "Every year",
+      "Every 2 years",
+      "Every 4 years",
+      "Every 3 years"
     ],
     "answer": 2
   },
   {
     "id": 24,
-    "question": "Which club won the 2025 CAF Champions League?",
+    "question": "What colour is the Brazil home shirt?",
     "options": [
-      "Al Ahly",
-      "Zamalek",
-      "Mamelodi Sundowns",
-      "Pyramids FC"
+      "Red",
+      "Blue",
+      "White",
+      "Yellow"
     ],
     "answer": 3
   },
   {
     "id": 25,
-    "question": "Which club has won the most European Cup / Champions League titles?",
+    "question": "Which colours does Argentina wear?",
     "options": [
-      "Real Madrid",
-      "AC Milan",
-      "Liverpool",
-      "Bayern Munich"
+      "Light blue and white",
+      "Red and white",
+      "Green and yellow",
+      "Black and white"
     ],
     "answer": 0
   },
   {
     "id": 26,
-    "question": "Which club won the 2019 Champions League?",
+    "question": "What colour is the famous home shirt of Real Madrid?",
     "options": [
-      "Tottenham",
-      "Liverpool",
-      "Barcelona",
-      "Ajax"
+      "Red",
+      "White",
+      "Blue",
+      "Black"
     ],
     "answer": 1
   },
   {
     "id": 27,
-    "question": "Which club won its first Champions League title in 2023?",
+    "question": "Which colours are on the famous Barcelona shirt?",
     "options": [
-      "Inter Milan",
-      "Arsenal",
-      "Manchester City",
-      "Chelsea"
+      "White and black",
+      "Green and white",
+      "Blue and red",
+      "Yellow and blue"
     ],
     "answer": 2
   },
   {
     "id": 28,
-    "question": "Which German club lost the 2024 Champions League final to Real Madrid?",
+    "question": "What colour is the Liverpool home shirt?",
     "options": [
-      "Bayern Munich",
-      "RB Leipzig",
-      "Bayer Leverkusen",
-      "Borussia Dortmund"
+      "Blue",
+      "White",
+      "Green",
+      "Red"
     ],
     "answer": 3
   },
   {
     "id": 29,
-    "question": "Which French club won its first Champions League title in 2025?",
+    "question": "What colour is the home shirt of the Egypt national team?",
     "options": [
-      "Paris Saint-Germain",
-      "Marseille",
-      "Monaco",
-      "Lyon"
+      "Red",
+      "White",
+      "Green",
+      "Blue"
     ],
     "answer": 0
   },
   {
     "id": 30,
-    "question": "In the 2005 final, Liverpool came back from 3-0 down at half-time. Which team were they playing?",
+    "question": "What is the nickname of the Egypt national team?",
     "options": [
-      "Juventus",
-      "AC Milan",
-      "Chelsea",
-      "Barcelona"
+      "The Lions",
+      "The Pharaohs",
+      "The Eagles",
+      "The Elephants"
     ],
     "answer": 1
   },
   {
     "id": 31,
-    "question": "Which club won the treble (league, cup and Champions League) in 2009?",
+    "question": "What colour is the Al Ahly home shirt?",
     "options": [
-      "Real Madrid",
-      "Manchester United",
-      "Barcelona",
-      "Inter Milan"
+      "White",
+      "Blue",
+      "Red",
+      "Green"
     ],
     "answer": 2
   },
   {
     "id": 32,
-    "question": "In which year did Manchester United win the Premier League, FA Cup and Champions League?",
+    "question": "What colour is the Zamalek home shirt?",
     "options": [
-      "1995",
-      "2003",
-      "2008",
-      "1999"
+      "Red",
+      "Black",
+      "Yellow",
+      "White"
     ],
     "answer": 3
   },
   {
     "id": 33,
-    "question": "Which club is nicknamed 'The Gunners'?",
+    "question": "Which famous Egyptian player played for Liverpool?",
     "options": [
-      "Arsenal",
-      "Chelsea",
-      "Tottenham",
-      "West Ham"
+      "Mohamed Salah",
+      "Mohamed Elneny",
+      "Omar Marmoush",
+      "Mahmoud Trezeguet"
     ],
     "answer": 0
   },
   {
     "id": 34,
-    "question": "Which club plays its home games at the Santiago Bernabéu?",
+    "question": "Which country is Lionel Messi from?",
     "options": [
-      "Atlético Madrid",
-      "Real Madrid",
-      "Barcelona",
-      "Valencia"
+      "Brazil",
+      "Argentina",
+      "Spain",
+      "Portugal"
     ],
     "answer": 1
   },
   {
     "id": 35,
-    "question": "Which club plays its home games at Anfield?",
+    "question": "Which country is Cristiano Ronaldo from?",
     "options": [
-      "Everton",
-      "Manchester City",
-      "Liverpool",
-      "Leeds United"
+      "Spain",
+      "Brazil",
+      "Portugal",
+      "Italy"
     ],
     "answer": 2
   },
   {
     "id": 36,
-    "question": "Which club plays its home games at Old Trafford?",
+    "question": "Which country is Neymar from?",
     "options": [
-      "Manchester City",
-      "Newcastle",
-      "Chelsea",
-      "Manchester United"
+      "Argentina",
+      "Portugal",
+      "Spain",
+      "Brazil"
     ],
     "answer": 3
   },
   {
     "id": 37,
-    "question": "Which two clubs share the San Siro stadium?",
+    "question": "Which country is Kylian Mbappé from?",
     "options": [
-      "AC Milan and Inter Milan",
-      "Juventus and Torino",
-      "Roma and Lazio",
-      "Napoli and Fiorentina"
+      "France",
+      "Spain",
+      "Italy",
+      "Belgium"
     ],
     "answer": 0
   },
   {
     "id": 38,
-    "question": "Which club plays its home games at the Allianz Arena?",
+    "question": "Which country is Erling Haaland from?",
     "options": [
-      "Borussia Dortmund",
-      "Bayern Munich",
-      "Bayer Leverkusen",
-      "Schalke"
+      "Sweden",
+      "Norway",
+      "Denmark",
+      "Germany"
     ],
     "answer": 1
   },
   {
     "id": 39,
-    "question": "Which club plays at Signal Iduna Park?",
+    "question": "Which country is Mohamed Salah from?",
     "options": [
-      "Bayern Munich",
-      "Schalke",
-      "Borussia Dortmund",
-      "Hamburg"
+      "Morocco",
+      "Algeria",
+      "Egypt",
+      "Tunisia"
     ],
     "answer": 2
   },
   {
     "id": 40,
-    "question": "Juventus is based in which Italian city?",
+    "question": "In which city is the club Real Madrid?",
     "options": [
-      "Milan",
-      "Rome",
-      "Naples",
-      "Turin"
+      "Barcelona",
+      "Seville",
+      "Valencia",
+      "Madrid"
     ],
     "answer": 3
   },
   {
     "id": 41,
-    "question": "Who has won the most Ballon d'Or awards?",
+    "question": "In which city is the club Barcelona?",
     "options": [
-      "Lionel Messi",
-      "Cristiano Ronaldo",
-      "Michel Platini",
-      "Johan Cruyff"
+      "Barcelona",
+      "Madrid",
+      "Valencia",
+      "Seville"
     ],
     "answer": 0
   },
   {
     "id": 42,
-    "question": "Who won the Ballon d'Or in 2018?",
+    "question": "In which country is the Premier League played?",
     "options": [
-      "Kylian Mbappé",
-      "Luka Modrić",
-      "Cristiano Ronaldo",
-      "Antoine Griezmann"
+      "Spain",
+      "England",
+      "Italy",
+      "France"
     ],
     "answer": 1
   },
   {
     "id": 43,
-    "question": "Who won the Ballon d'Or in 2022?",
+    "question": "In which country is La Liga played?",
     "options": [
-      "Kylian Mbappé",
-      "Luka Modrić",
-      "Karim Benzema",
-      "Robert Lewandowski"
+      "Italy",
+      "Portugal",
+      "Spain",
+      "France"
     ],
     "answer": 2
   },
   {
     "id": 44,
-    "question": "Who won the Ballon d'Or in 2024?",
-    "options": [
-      "Vinícius Júnior",
-      "Jude Bellingham",
-      "Dani Carvajal",
-      "Rodri"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 45,
-    "question": "Who won the Ballon d'Or in 2025?",
-    "options": [
-      "Ousmane Dembélé",
-      "Lamine Yamal",
-      "Kylian Mbappé",
-      "Mohamed Salah"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 46,
-    "question": "Cristiano Ronaldo joined Manchester United in 2003. Which club did he leave?",
-    "options": [
-      "Benfica",
-      "Sporting CP",
-      "Porto",
-      "Real Madrid"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 47,
-    "question": "Which club did Cristiano Ronaldo leave to join Juventus in 2018?",
-    "options": [
-      "Manchester United",
-      "Barcelona",
-      "Real Madrid",
-      "Sporting CP"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 48,
-    "question": "Neymar's 2017 world-record transfer to PSG was from which club?",
-    "options": [
-      "Santos",
-      "Real Madrid",
-      "Bayern Munich",
-      "Barcelona"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 49,
-    "question": "How many Premier League goals did Mohamed Salah score in his record 2017-18 season?",
-    "options": [
-      "32",
-      "28",
-      "30",
-      "35"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 50,
-    "question": "Erling Haaland joined Manchester City in 2022 from which club?",
-    "options": [
-      "Red Bull Salzburg",
-      "Borussia Dortmund",
-      "Leeds United",
-      "Bayern Munich"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 51,
-    "question": "Kylian Mbappé joined Real Madrid in 2024 from which club?",
-    "options": [
-      "Monaco",
-      "Liverpool",
-      "Paris Saint-Germain",
-      "Chelsea"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 52,
-    "question": "Which player did Zinedine Zidane head-butt in the 2006 World Cup final?",
-    "options": [
-      "Gennaro Gattuso",
-      "Fabio Cannavaro",
-      "Andrea Pirlo",
-      "Marco Materazzi"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 53,
-    "question": "Which goalkeeper won the Golden Glove at the 2022 World Cup?",
-    "options": [
-      "Emiliano Martínez",
-      "Hugo Lloris",
-      "Dominik Livaković",
-      "Yassine Bounou"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 54,
-    "question": "Who won the Golden Boot at the 2022 World Cup?",
-    "options": [
-      "Lionel Messi",
-      "Kylian Mbappé",
-      "Olivier Giroud",
-      "Julián Álvarez"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 55,
-    "question": "Which African team became the first to reach a World Cup semi-final, in 2022?",
-    "options": [
-      "Senegal",
-      "Ghana",
-      "Morocco",
-      "Cameroon"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 56,
-    "question": "Who is England's all-time top goalscorer?",
-    "options": [
-      "Wayne Rooney",
-      "Bobby Charlton",
-      "Gary Lineker",
-      "Harry Kane"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 57,
-    "question": "Who is the Premier League's all-time top goalscorer?",
-    "options": [
-      "Alan Shearer",
-      "Wayne Rooney",
-      "Harry Kane",
-      "Andy Cole"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 58,
-    "question": "Which team went the whole 2003-04 Premier League season unbeaten?",
-    "options": [
-      "Chelsea",
-      "Arsenal",
-      "Manchester United",
-      "Liverpool"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 59,
-    "question": "Which club shocked everyone by winning the Premier League in 2015-16?",
-    "options": [
-      "Tottenham",
-      "Everton",
-      "Leicester City",
-      "West Ham"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 60,
-    "question": "Which manager led Manchester United from 1986 to 2013?",
-    "options": [
-      "José Mourinho",
-      "Arsène Wenger",
-      "Matt Busby",
-      "Sir Alex Ferguson"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 61,
-    "question": "Which manager is famous for calling himself 'The Special One'?",
-    "options": [
-      "José Mourinho",
-      "Pep Guardiola",
-      "Jürgen Klopp",
-      "Carlo Ancelotti"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 62,
-    "question": "In which season did Manchester City win the treble?",
-    "options": [
-      "2018-19",
-      "2022-23",
-      "2020-21",
-      "2021-22"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 63,
-    "question": "Which coach led Argentina to the 2022 World Cup title?",
-    "options": [
-      "Diego Simeone",
-      "Marcelo Bielsa",
-      "Lionel Scaloni",
-      "Gerardo Martino"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 64,
-    "question": "Who was France's coach when they won the 2018 World Cup?",
-    "options": [
-      "Zinedine Zidane",
-      "Laurent Blanc",
-      "Raymond Domenech",
-      "Didier Deschamps"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 65,
-    "question": "Which Argentine coach led Atlético Madrid to the La Liga title in 2013-14?",
-    "options": [
-      "Diego Simeone",
-      "Marcelo Bielsa",
-      "Mauricio Pochettino",
-      "Jorge Sampaoli"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 66,
-    "question": "How many minutes does a normal football match last, not counting extra time?",
-    "options": [
-      "80",
-      "90",
-      "100",
-      "120"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 67,
-    "question": "What do we call it when a player scores three goals in one match?",
-    "options": [
-      "Brace",
-      "Double",
-      "Hat-trick",
-      "Clean sheet"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 68,
-    "question": "How many yellow cards in one match lead to a red card?",
-    "options": [
-      "1",
-      "3",
-      "4",
-      "2"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 69,
-    "question": "To be onside, an attacker must have at least how many opponents (including the goalkeeper) between them and the goal line when the ball is played?",
-    "options": [
-      "2",
-      "1",
-      "3",
-      "4"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 70,
-    "question": "About how far is the penalty spot from the goal line?",
-    "options": [
-      "9 metres",
-      "11 metres",
-      "13 metres",
-      "16 metres"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 71,
-    "question": "What does VAR stand for?",
-    "options": [
-      "Video Action Review",
-      "Visual Assistant Referee",
-      "Video Assistant Referee",
-      "Very Accurate Referee"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 72,
-    "question": "How long is each half of extra time?",
-    "options": [
-      "10 minutes",
-      "20 minutes",
-      "25 minutes",
-      "15 minutes"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 73,
-    "question": "In football, what does a 'clean sheet' mean?",
-    "options": [
-      "A team does not concede a goal",
-      "A player scores a hat-trick",
-      "A team wins by five goals",
-      "A team gets no yellow cards"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 74,
-    "question": "What do we call it when a player scores two goals in one match?",
-    "options": [
-      "A hat-trick",
-      "A brace",
-      "A double-play",
-      "A clean sheet"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 75,
-    "question": "In which country is the Bundesliga played?",
-    "options": [
-      "Austria",
-      "Switzerland",
-      "Germany",
-      "Netherlands"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 76,
-    "question": "In which country is Serie A played?",
+    "question": "In which country is Ligue 1 played?",
     "options": [
       "Spain",
-      "France",
-      "Portugal",
-      "Italy"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 77,
-    "question": "In which country is the Eredivisie played?",
-    "options": [
-      "Netherlands",
       "Belgium",
-      "Denmark",
-      "Sweden"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 78,
-    "question": "Which country won the 1998 World Cup on home soil?",
-    "options": [
-      "Brazil",
-      "France",
       "Italy",
-      "Netherlands"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 79,
-    "question": "The 'Merseyside derby' is Liverpool against which club?",
-    "options": [
-      "Tottenham",
-      "Manchester City",
-      "Everton",
-      "Aston Villa"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 80,
-    "question": "'El Clásico' is Real Madrid against which club?",
-    "options": [
-      "Atlético Madrid",
-      "Sevilla",
-      "Valencia",
-      "Barcelona"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 81,
-    "question": "The 'Derby della Madonnina' is AC Milan against which club?",
-    "options": [
-      "Inter Milan",
-      "Juventus",
-      "Roma",
-      "Napoli"
-    ],
-    "answer": 0
-  },
-  {
-    "id": 82,
-    "question": "'Der Klassiker' in Germany is Bayern Munich against which club?",
-    "options": [
-      "Schalke",
-      "Borussia Dortmund",
-      "Hamburg",
-      "Werder Bremen"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 83,
-    "question": "Which club plays its home games at the Parc des Princes?",
-    "options": [
-      "Marseille",
-      "Lyon",
-      "Paris Saint-Germain",
-      "Monaco"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 84,
-    "question": "Which national team is nicknamed 'Les Bleus'?",
-    "options": [
-      "Italy",
-      "Belgium",
-      "Netherlands",
       "France"
     ],
     "answer": 3
   },
   {
-    "id": 85,
-    "question": "Which national team is nicknamed 'The Three Lions'?",
+    "id": 45,
+    "question": "In which city are Al Ahly and Zamalek based?",
     "options": [
-      "England",
-      "Scotland",
-      "Wales",
-      "Ireland"
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 46,
+    "question": "Which is the biggest national team tournament in Africa?",
+    "options": [
+      "Copa América",
+      "Africa Cup of Nations",
+      "Euro",
+      "Asian Cup"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 47,
+    "question": "Which is the biggest national team tournament in South America?",
+    "options": [
+      "Euro",
+      "Africa Cup of Nations",
+      "Copa América",
+      "Gold Cup"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 48,
+    "question": "The Euro tournament is played by teams from which continent?",
+    "options": [
+      "Asia",
+      "Africa",
+      "South America",
+      "Europe"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 49,
+    "question": "Which country won the 2022 World Cup?",
+    "options": [
+      "Argentina",
+      "France",
+      "Brazil",
+      "Spain"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 50,
+    "question": "Which country won the 2018 World Cup?",
+    "options": [
+      "Croatia",
+      "France",
+      "Brazil",
+      "Germany"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 51,
+    "question": "Which player has won the Ballon d'Or the most times?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Neymar",
+      "Lionel Messi",
+      "Kylian Mbappé"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 52,
+    "question": "Which player is known as 'CR7'?",
+    "options": [
+      "Lionel Messi",
+      "Neymar",
+      "Mohamed Salah",
+      "Cristiano Ronaldo"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 53,
+    "question": "Which player is nicknamed 'The Egyptian King'?",
+    "options": [
+      "Mohamed Salah",
+      "Mohamed Aboutrika",
+      "Mohamed Elneny",
+      "Ahmed Hassan"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 54,
+    "question": "Which shirt number does Lionel Messi wear for Argentina?",
+    "options": [
+      "7",
+      "10",
+      "9",
+      "11"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 55,
+    "question": "Which shirt number is Cristiano Ronaldo famous for?",
+    "options": [
+      "9",
+      "10",
+      "7",
+      "11"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 56,
+    "question": "Which club did Lionel Messi play for during most of his career?",
+    "options": [
+      "Real Madrid",
+      "PSG",
+      "Inter Miami",
+      "Barcelona"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 57,
+    "question": "Which Spanish club did Cristiano Ronaldo play for?",
+    "options": [
+      "Real Madrid",
+      "Barcelona",
+      "Sevilla",
+      "Valencia"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 58,
+    "question": "Which club is nicknamed 'The Red Devils'?",
+    "options": [
+      "Liverpool",
+      "Manchester United",
+      "Arsenal",
+      "Chelsea"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 59,
+    "question": "Which club is nicknamed 'The Gunners'?",
+    "options": [
+      "Chelsea",
+      "Liverpool",
+      "Arsenal",
+      "Manchester United"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 60,
+    "question": "Camp Nou is the home stadium of which club?",
+    "options": [
+      "Real Madrid",
+      "Atlético Madrid",
+      "Sevilla",
+      "Barcelona"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 61,
+    "question": "The Santiago Bernabéu is the home stadium of which club?",
+    "options": [
+      "Real Madrid",
+      "Barcelona",
+      "Valencia",
+      "Sevilla"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 62,
+    "question": "Old Trafford is the home stadium of which club?",
+    "options": [
+      "Liverpool",
+      "Manchester United",
+      "Chelsea",
+      "Arsenal"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 63,
+    "question": "Anfield is the home stadium of which club?",
+    "options": [
+      "Chelsea",
+      "Arsenal",
+      "Liverpool",
+      "Manchester United"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 64,
+    "question": "What is the name of the world football organisation?",
+    "options": [
+      "NBA",
+      "UEFA",
+      "IOC",
+      "FIFA"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 65,
+    "question": "UEFA is the football organisation for which continent?",
+    "options": [
+      "Europe",
+      "Africa",
+      "Asia",
+      "South America"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 66,
+    "question": "CAF is the football organisation for which continent?",
+    "options": [
+      "Europe",
+      "Africa",
+      "Asia",
+      "South America"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 67,
+    "question": "What do goalkeepers wear on their hands?",
+    "options": [
+      "Socks",
+      "Helmets",
+      "Gloves",
+      "Rings"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 68,
+    "question": "What shape is a football?",
+    "options": [
+      "A cube",
+      "A flat disc",
+      "An egg",
+      "A sphere (round)"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 69,
+    "question": "What do we call it when the ball goes out of the side line and a player throws it back?",
+    "options": [
+      "A throw-in",
+      "A corner kick",
+      "A penalty",
+      "A goal kick"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 70,
+    "question": "What do we call a kick that is given after a foul?",
+    "options": [
+      "Throw-in",
+      "Free kick",
+      "Corner kick",
+      "Goal kick"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 71,
+    "question": "What is the big box in front of the goal called?",
+    "options": [
+      "Centre circle",
+      "Corner",
+      "Penalty area",
+      "Touchline"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 72,
+    "question": "What is the line across the middle of the pitch called?",
+    "options": [
+      "Goal line",
+      "Touchline",
+      "Penalty line",
+      "Halfway line"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 73,
+    "question": "What does a substitute do?",
+    "options": [
+      "Replaces another player",
+      "Takes all the penalties",
+      "Gives the cards",
+      "Keeps the score"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 74,
+    "question": "A winger usually plays...",
+    "options": [
+      "In the goal",
+      "On the sides of the pitch",
+      "In the referee's room",
+      "Only in the middle"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 75,
+    "question": "What is the main job of a defender?",
+    "options": [
+      "Score all the goals",
+      "Take all the corners",
+      "Stop the other team from scoring",
+      "Give the cards"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 76,
+    "question": "In football, what does 'LW' mean?",
+    "options": [
+      "Left Wall",
+      "Long Wing",
+      "Last Winner",
+      "Left Winger"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 77,
+    "question": "In football, what does 'GK' mean?",
+    "options": [
+      "Goalkeeper",
+      "Goal King",
+      "Game Keeper",
+      "Ground Kick"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 78,
+    "question": "In football, what does 'CB' mean?",
+    "options": [
+      "Corner Ball",
+      "Centre-back",
+      "Club Boss",
+      "Cup Bearer"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 79,
+    "question": "In football games, what does 'OVR' mean?",
+    "options": [
+      "Over time",
+      "Offside rating",
+      "Overall rating",
+      "Old version"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 80,
+    "question": "Which tournament is for the best clubs in Europe?",
+    "options": [
+      "Africa Cup of Nations",
+      "Copa América",
+      "Euro",
+      "Champions League"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 81,
+    "question": "Which club has won the most Champions League titles?",
+    "options": [
+      "Real Madrid",
+      "Barcelona",
+      "Liverpool",
+      "Manchester City"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 82,
+    "question": "Which country has won the most World Cups?",
+    "options": [
+      "Germany",
+      "Brazil",
+      "France",
+      "Spain"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 83,
+    "question": "Which country hosted the 2022 World Cup?",
+    "options": [
+      "Russia",
+      "Brazil",
+      "Qatar",
+      "Germany"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 84,
+    "question": "What colour is the World Cup trophy?",
+    "options": [
+      "Silver",
+      "Red",
+      "Blue",
+      "Gold"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 85,
+    "question": "The Egypt national team plays in which continent's competitions?",
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
     ],
     "answer": 0
   },
   {
     "id": 86,
-    "question": "Which player scored a record 91 goals in a calendar year in 2012?",
+    "question": "'El Clásico' is a match between Real Madrid and which club?",
     "options": [
-      "Cristiano Ronaldo",
-      "Lionel Messi",
-      "Neymar",
-      "Robert Lewandowski"
+      "Atlético Madrid",
+      "Barcelona",
+      "Sevilla",
+      "Valencia"
     ],
     "answer": 1
   },
   {
     "id": 87,
-    "question": "Who scored the winning goal in the 2010 World Cup final?",
+    "question": "Which shirt number do goalkeepers usually wear?",
     "options": [
-      "Xavi",
-      "David Villa",
-      "Andrés Iniesta",
-      "Fernando Torres"
+      "9",
+      "10",
+      "1",
+      "11"
     ],
     "answer": 2
   },
   {
     "id": 88,
-    "question": "Who scored the winning goal for Germany in the 2014 World Cup final?",
+    "question": "Which country is Pelé from?",
     "options": [
-      "Thomas Müller",
-      "Miroslav Klose",
-      "André Schürrle",
-      "Mario Götze"
+      "Argentina",
+      "Portugal",
+      "Uruguay",
+      "Brazil"
     ],
     "answer": 3
   },
   {
     "id": 89,
-    "question": "Which country won the 2006 World Cup?",
+    "question": "Which country is Zinedine Zidane from?",
     "options": [
-      "Italy",
       "France",
-      "Germany",
-      "Portugal"
+      "Italy",
+      "Spain",
+      "Germany"
     ],
     "answer": 0
   },
   {
     "id": 90,
-    "question": "Which two countries co-hosted the 2002 World Cup?",
+    "question": "The Ballon d'Or is an award for the best...",
     "options": [
-      "China and Japan",
-      "Japan and South Korea",
-      "South Korea and China",
-      "Japan and Thailand"
+      "Stadium",
+      "Player",
+      "Referee",
+      "Fan"
     ],
     "answer": 1
   },
   {
     "id": 91,
-    "question": "Which Brazilian star, famous for his smile and tricks, won the Ballon d'Or in 2005?",
+    "question": "Which Manchester club wears sky blue?",
     "options": [
-      "Kaká",
-      "Ronaldo",
-      "Ronaldinho",
-      "Rivaldo"
+      "Manchester United",
+      "Liverpool",
+      "Manchester City",
+      "Chelsea"
     ],
     "answer": 2
   },
   {
     "id": 92,
-    "question": "Which Italian goalkeeper spent 17 years at Juventus and won the 2006 World Cup?",
+    "question": "In which country is Bayern Munich?",
     "options": [
-      "Gianluigi Donnarumma",
-      "Iker Casillas",
-      "Manuel Neuer",
-      "Gianluigi Buffon"
+      "Spain",
+      "Austria",
+      "Switzerland",
+      "Germany"
     ],
     "answer": 3
   },
   {
     "id": 93,
-    "question": "Who is Arsenal's all-time top goalscorer?",
+    "question": "In which city is the club Paris Saint-Germain?",
     "options": [
-      "Thierry Henry",
-      "Ian Wright",
-      "Robin van Persie",
-      "Dennis Bergkamp"
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Monaco"
     ],
     "answer": 0
   },
   {
     "id": 94,
-    "question": "Who is Manchester United's all-time top goalscorer?",
+    "question": "In which country is the club Juventus?",
     "options": [
-      "Bobby Charlton",
-      "Wayne Rooney",
-      "Ryan Giggs",
-      "Cristiano Ronaldo"
+      "Spain",
+      "Italy",
+      "France",
+      "Portugal"
     ],
     "answer": 1
   },
   {
     "id": 95,
-    "question": "Who is Real Madrid's all-time top goalscorer?",
+    "question": "In which country is the club Real Madrid?",
     "options": [
-      "Raúl",
-      "Karim Benzema",
-      "Cristiano Ronaldo",
-      "Alfredo Di Stéfano"
+      "Italy",
+      "Portugal",
+      "Spain",
+      "France"
     ],
     "answer": 2
   },
   {
     "id": 96,
-    "question": "Who is Barcelona's all-time top goalscorer?",
+    "question": "What do we call three goals by one player in one match?",
     "options": [
-      "Luis Suárez",
-      "Xavi",
-      "Ronaldinho",
-      "Lionel Messi"
+      "Double",
+      "Clean sheet",
+      "Penalty",
+      "Hat-trick"
     ],
     "answer": 3
   },
   {
     "id": 97,
-    "question": "Which country hosted the 2014 World Cup?",
+    "question": "What do we call it when a goalkeeper does not let any goal in during a match?",
     "options": [
-      "Brazil",
-      "Russia",
-      "Germany",
-      "South Africa"
+      "A clean sheet",
+      "A hat-trick",
+      "A free kick",
+      "A throw-in"
     ],
     "answer": 0
   },
   {
     "id": 98,
-    "question": "In which year did Lionel Messi join Inter Miami?",
+    "question": "What does the referee blow to stop the game?",
     "options": [
-      "2021",
-      "2023",
-      "2022",
-      "2024"
+      "A horn",
+      "A whistle",
+      "A drum",
+      "A bell"
     ],
     "answer": 1
   },
   {
     "id": 99,
-    "question": "Which country won the 2024 Copa América?",
+    "question": "Which official runs along the side of the pitch and raises a flag?",
     "options": [
-      "Colombia",
-      "Brazil",
-      "Argentina",
-      "Uruguay"
+      "Goalkeeper",
+      "Captain",
+      "Assistant referee (linesman)",
+      "Fan"
     ],
     "answer": 2
   },
   {
     "id": 100,
-    "question": "Which country won the 2023 Africa Cup of Nations, played at home in early 2024?",
+    "question": "What colour is the Chelsea home shirt?",
     "options": [
-      "Nigeria",
-      "Egypt",
-      "Senegal",
-      "Ivory Coast"
+      "Red",
+      "White",
+      "Green",
+      "Blue"
     ],
     "answer": 3
   }

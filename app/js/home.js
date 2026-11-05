@@ -1,4 +1,4 @@
-import { loadCards, pickPackCard } from "./cards.js";
+import { loadCards, pickPackCard, welcomeCard } from "./cards.js";
 import { loadState, updateState } from "./storage.js";
 import { dateKey, humanDate, isThursday } from "./dates.js";
 import { initSharedUI, refreshCoinDisplay } from "./ui.js";
@@ -29,12 +29,55 @@ async function bootWeekly() {
 
   try {
     weekly.cards = await loadCards();
+    maybeGrantWelcomeCard();
   } catch (error) {
     console.error("The weekly pack could not load the card pool.", error);
     weekly.error = true;
   }
 
   renderWeeklyPanel(loadState());
+}
+
+function maybeGrantWelcomeCard() {
+  const before = loadState();
+  if (before.welcomeCardClaimed) return;
+
+  const card = welcomeCard(weekly.cards);
+  if (!card) return;
+
+  const wasOwned = before.ownedCardIds.includes(card.id);
+  let granted = false;
+
+  updateState((state) => {
+    if (state.welcomeCardClaimed) return state;
+
+    state.welcomeCardClaimed = true;
+    if (!state.ownedCardIds.includes(card.id)) {
+      state.ownedCardIds.push(card.id);
+    }
+    granted = true;
+    return state;
+  });
+
+  if (!granted) return;
+
+  refreshCoinDisplay();
+
+  showReveal({
+    card,
+    isNew: !wasOwned,
+    sourceLabel: "Welcome card",
+    actions: [
+      {
+        label: "View collection",
+        kind: "primary",
+        arrow: true,
+        href: "./collection.html",
+      },
+      { label: "Build your XI", kind: "ghost", href: "./lineup.html" },
+    ],
+    hint: "A one-time welcome card, saved to your collection.",
+  });
 }
 
 function renderWeeklyPanel(state, now = new Date()) {
@@ -94,7 +137,7 @@ function claimWeeklyPack() {
     return;
   }
 
-  const card = pickPackCard(weekly.cards);
+  const card = pickPackCard(weekly.cards, new Set(before.ownedCardIds));
   if (!card) return;
 
   const wasOwned = before.ownedCardIds.includes(card.id);

@@ -1,4 +1,10 @@
-import { loadCards, cardImageUrl, escapeHtml } from "./cards.js";
+import {
+  loadCards,
+  cardImageUrl,
+  escapeHtml,
+  playerCards,
+  managerCards,
+} from "./cards.js";
 import { loadState, updateState } from "./storage.js";
 import { initSharedUI } from "./ui.js";
 
@@ -25,10 +31,11 @@ const root = document.querySelector("[data-lineup-root]");
 
 const app = {
   cards: [],
+  managers: [],
   ownedIds: new Set(),
   state: null,
   picker: null,
-  activeSlot: null,
+  pickerContext: null,
 };
 
 initSharedUI();
@@ -38,7 +45,9 @@ async function boot() {
   renderLoading();
 
   try {
-    app.cards = await loadCards();
+    const cards = await loadCards();
+    app.cards = playerCards(cards);
+    app.managers = managerCards(cards);
     app.state = loadState();
     app.ownedIds = new Set(app.state.ownedCardIds);
     cleanLineup();
@@ -80,13 +89,27 @@ function cleanLineup() {
     seen.add(cardId);
   });
 
-  if (JSON.stringify(cleaned) === JSON.stringify(normalized)) {
+  const currentManagerId = Number.isInteger(app.state.managerId)
+    ? app.state.managerId
+    : null;
+  const managerValid =
+    currentManagerId !== null &&
+    app.ownedIds.has(currentManagerId) &&
+    app.managers.some((card) => card.id === currentManagerId);
+  const cleanedManagerId = managerValid ? currentManagerId : null;
+
+  if (
+    JSON.stringify(cleaned) === JSON.stringify(normalized) &&
+    cleanedManagerId === currentManagerId
+  ) {
     app.state.lineup = cleaned;
+    app.state.managerId = cleanedManagerId;
     return;
   }
 
   app.state = updateState((state) => {
     state.lineup = cleaned;
+    state.managerId = cleanedManagerId;
     return state;
   });
 }
@@ -106,6 +129,9 @@ function renderLineup() {
       : null;
   const percent = Math.round((filled / SLOT_COUNT) * 100);
   const ownedCount = app.ownedIds.size;
+  const manager = app.managers.find(
+    (card) => card.id === app.state.managerId
+  );
 
   const rows = ROWS.map((group) => {
     const slots = FORMATION.filter((slot) => slot.group === group)
@@ -157,6 +183,20 @@ function renderLineup() {
       ${rows}
     </div>
 
+    <div class="lineup-manager">
+      <div class="lineup-manager__copy">
+        <p class="eyebrow">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          Staff
+        </p>
+        <h2 class="lineup-manager__title">Manager</h2>
+        <p class="lineup-manager__hint">
+          Optional. Managers do not change the team rating.
+        </p>
+      </div>
+      ${renderManagerSlot(manager)}
+    </div>
+
     <div class="lineup-footer">
       <p class="lineup-footer__hint">
         ${
@@ -174,8 +214,52 @@ function renderLineup() {
   });
 
   root
+    .querySelector("[data-manager-slot]")
+    ?.addEventListener("click", openManagerPicker);
+
+  root
     .querySelector("[data-clear-lineup]")
     ?.addEventListener("click", clearLineup);
+}
+
+function renderManagerSlot(manager) {
+  if (!manager) {
+    return `
+      <button
+        class="pitch-slot is-empty manager-slot"
+        type="button"
+        data-manager-slot
+        aria-label="Manager slot: empty. Choose a manager."
+      >
+        <span class="pitch-slot__position">MGR</span>
+        <span class="pitch-slot__plus" aria-hidden="true">+</span>
+        <span class="pitch-slot__empty-label">Manager</span>
+      </button>
+    `;
+  }
+
+  return `
+    <button
+      class="pitch-slot is-filled is-manager manager-slot"
+      type="button"
+      data-manager-slot
+      aria-label="Manager slot: ${escapeHtml(manager.name)}, ${escapeHtml(
+        manager.club
+      )}. Change manager."
+    >
+      <img
+        class="pitch-slot__image"
+        src="${cardImageUrl(manager)}"
+        alt=""
+        width="470"
+        height="660"
+        loading="lazy"
+      />
+      <span class="pitch-slot__shade" aria-hidden="true"></span>
+      <span class="pitch-slot__position">MGR</span>
+      <span class="pitch-slot__name">${escapeHtml(manager.name)}</span>
+    </button>
+  `;
 }
 
 function renderSlot(slot, cardById) {
@@ -274,10 +358,10 @@ function ensurePicker() {
   });
 
   dialog.querySelector("[data-picker-remove]")?.addEventListener("click", () => {
-    if (!app.activeSlot) return;
-    const slot = app.activeSlot;
+    const context = app.pickerContext;
+    if (!context?.onRemove) return;
     dialog.close();
-    clearSlot(slot);
+    context.onRemove();
   });
 
   dialog.addEventListener("click", (event) => {
@@ -292,9 +376,6 @@ function openPicker(slotId) {
   const slot = FORMATION.find((item) => item.id === slotId);
   if (!slot) return;
 
-  app.activeSlot = slotId;
-
-  const dialog = ensurePicker();
   const currentId = app.state.lineup[slotId];
   const usedIds = new Set(
     Object.entries(app.state.lineup)
@@ -315,15 +396,73 @@ function openPicker(slotId) {
       return b.rating - a.rating || a.name.localeCompare(b.name);
     });
 
-  dialog.querySelector("[data-picker-slot]").textContent = slot.label;
-  dialog.querySelector(
-    "[data-picker-title]"
-  ).textContent = `Choose a card for ${slot.label}`;
+  openPickerPanel({
+    slotLabel: slot.label,
+    title: `Choose a card for ${slot.label}`,
+    currentId,
+    cards,
+    usedIds,
+    removeLabel: "Remove from this slot",
+    emptyTitle: "You don't own any cards yet.",
+    emptyAction: { label: "Open a pack", href: "./store.html" },
+    onPick: (cardId) => assignCard(slotId, cardId),
+    onRemove: () => clearSlot(slotId),
+  });
+}
+
+function openManagerPicker() {
+  const currentId = Number.isInteger(app.state.managerId)
+    ? app.state.managerId
+    : undefined;
+
+  const cards = app.managers
+    .filter((card) => app.ownedIds.has(card.id))
+    .sort((a, b) => {
+      if (a.id === currentId) return -1;
+      if (b.id === currentId) return 1;
+      return a.name.localeCompare(b.name);
+    });
+
+  openPickerPanel({
+    slotLabel: "Manager",
+    title: "Choose your manager",
+    currentId,
+    cards,
+    usedIds: new Set(),
+    removeLabel: "Remove manager",
+    emptyTitle: "You don't own a manager yet.",
+    emptyHint: "Managers come from the Real Madrid and Barcelona packages.",
+    emptyAction: { label: "Visit the store", href: "./store.html" },
+    onPick: (cardId) => assignManager(cardId),
+    onRemove: () => clearManager(),
+  });
+}
+
+function openPickerPanel({
+  slotLabel,
+  title,
+  currentId,
+  cards,
+  usedIds,
+  removeLabel,
+  emptyTitle,
+  emptyHint = "",
+  emptyAction,
+  onPick,
+  onRemove,
+}) {
+  const dialog = ensurePicker();
+  app.pickerContext = { onRemove };
+
+  dialog.querySelector("[data-picker-slot]").textContent = slotLabel;
+  dialog.querySelector("[data-picker-title]").textContent = title;
 
   const removeButton = dialog.querySelector("[data-picker-remove]");
+  const canRemove = Number.isInteger(currentId);
   if (removeButton) {
-    removeButton.disabled = !Number.isInteger(currentId);
-    removeButton.hidden = !Number.isInteger(currentId);
+    removeButton.textContent = removeLabel;
+    removeButton.disabled = !canRemove;
+    removeButton.hidden = !canRemove;
   }
 
   const body = dialog.querySelector("[data-picker-body]");
@@ -336,10 +475,17 @@ function openPicker(slotId) {
           .join("")
       : `
         <div class="card-picker__empty">
-          <p>You don't own any cards yet.</p>
-          <a class="btn btn--primary btn--wide" href="./store.html">
-            <span>Open a pack</span>
-          </a>
+          <p>${escapeHtml(emptyTitle)}</p>
+          ${emptyHint ? `<p>${escapeHtml(emptyHint)}</p>` : ""}
+          ${
+            emptyAction
+              ? `<a class="btn btn--primary btn--wide" href="${escapeHtml(
+                  emptyAction.href
+                )}">
+                  <span>${escapeHtml(emptyAction.label)}</span>
+                </a>`
+              : ""
+          }
         </div>
       `;
 
@@ -347,7 +493,7 @@ function openPicker(slotId) {
     button.addEventListener("click", () => {
       const cardId = Number(button.dataset.pickCard);
       dialog.close();
-      assignCard(slotId, cardId);
+      onPick(cardId);
     });
   });
 
@@ -356,7 +502,22 @@ function openPicker(slotId) {
 
 function renderPickerCard(card, currentId, isUsed) {
   const isCurrent = card.id === currentId;
-  const status = isCurrent ? "Selected" : isUsed ? "In XI" : `#${card.rating}`;
+  const isManager = card.type === "manager";
+  const status = isCurrent
+    ? "Selected"
+    : isUsed
+      ? "In XI"
+      : isManager
+        ? "Manager"
+        : `#${card.rating}`;
+  const meta = isManager
+    ? `${escapeHtml(card.club)} · Manager`
+    : `${escapeHtml(card.club)} · ${escapeHtml(card.position)}`;
+  const aria = isManager
+    ? `${escapeHtml(card.name)}, manager of ${escapeHtml(card.club)}`
+    : `${escapeHtml(card.name)}, ${escapeHtml(card.club)}, ${escapeHtml(
+        card.position
+      )}, rated ${card.rating}`;
   const classes = [
     "picker-card",
     isCurrent ? "is-current" : "",
@@ -371,9 +532,7 @@ function renderPickerCard(card, currentId, isUsed) {
       type="button"
       data-pick-card="${card.id}"
       ${isUsed ? "disabled" : ""}
-      aria-label="${escapeHtml(card.name)}, ${escapeHtml(
-        card.club
-      )}, ${escapeHtml(card.position)}, rated ${card.rating}${
+      aria-label="${aria}${
         isCurrent ? ", currently selected" : isUsed ? ", already in the XI" : ""
       }"
     >
@@ -388,9 +547,7 @@ function renderPickerCard(card, currentId, isUsed) {
       </span>
       <span class="picker-card__info">
         <span class="picker-card__name">${escapeHtml(card.name)}</span>
-        <span class="picker-card__meta">
-          ${escapeHtml(card.club)} · ${escapeHtml(card.position)}
-        </span>
+        <span class="picker-card__meta">${meta}</span>
       </span>
       <span class="picker-card__status">${status}</span>
     </button>
@@ -420,6 +577,27 @@ function clearSlot(slotId) {
     const lineup = normalizeLineup(state.lineup);
     delete lineup[slotId];
     state.lineup = lineup;
+    return state;
+  });
+
+  renderLineup();
+}
+
+function assignManager(cardId) {
+  if (!app.ownedIds.has(cardId)) return;
+  if (!app.managers.some((card) => card.id === cardId)) return;
+
+  app.state = updateState((state) => {
+    state.managerId = cardId;
+    return state;
+  });
+
+  renderLineup();
+}
+
+function clearManager() {
+  app.state = updateState((state) => {
+    state.managerId = null;
     return state;
   });
 

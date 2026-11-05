@@ -106,11 +106,6 @@ export function showReveal({
     </div>
   `;
 
-  document.body.appendChild(reveal);
-  active = { reveal, trigger, returnFocus, onClose };
-
-  reveal.querySelector("[data-reveal-close]")?.focus();
-
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       reveal.querySelector("[data-reveal-card]")?.classList.add("is-flipped");
@@ -118,6 +113,141 @@ export function showReveal({
   });
 
   window.setTimeout(() => reveal.classList.add("is-revealed"), 620);
+
+  return mountReveal({ reveal, trigger, returnFocus, onClose, actions });
+}
+
+export function showBundleReveal({
+  title,
+  cards = [],
+  newIds = new Set(),
+  actions = [],
+  hint = "",
+  onClose,
+  returnFocus,
+}) {
+  closeReveal({ restoreFocus: false });
+
+  if (cards.length === 0) return null;
+
+  const trigger = document.activeElement;
+  const managerCount = cards.filter(
+    (card) => card.type === "manager"
+  ).length;
+  const playerCount = cards.length - managerCount;
+  const newCount = cards.filter((card) => newIds.has(card.id)).length;
+
+  const actionsHtml = actions
+    .map((action, index) => {
+      const tag = action.href ? "a" : "button";
+      const attributes = action.href
+        ? `href="${escapeHtml(action.href)}"`
+        : `type="button" ${action.disabled ? "disabled" : ""}`;
+
+      return `
+        <${tag}
+          class="btn btn--${action.kind ?? "primary"} btn--wide"
+          ${attributes}
+          data-reveal-action="${index}"
+        >
+          <span>${escapeHtml(action.label)}</span>
+          ${action.arrow ? ARROW : ""}
+        </${tag}>
+      `;
+    })
+    .join("");
+
+  const reveal = document.createElement("div");
+  reveal.className = "reveal";
+  reveal.innerHTML = `
+    <div class="reveal__scrim" data-reveal-close></div>
+    <div
+      class="reveal__box reveal__box--bundle"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="reveal-title"
+      aria-describedby="reveal-status"
+    >
+      <button class="reveal__close" type="button" data-reveal-close aria-label="Close reveal">
+        ${CLOSE}
+      </button>
+
+      <p class="eyebrow reveal__eyebrow">
+        <span class="eyebrow__dot" aria-hidden="true"></span>
+        Bundle opened
+        <span class="eyebrow__separator" aria-hidden="true">/</span>
+        ${escapeHtml(title)}
+      </p>
+
+      <h2 class="reveal__name" id="reveal-title">${escapeHtml(title)}</h2>
+      <p class="reveal__meta">
+        ${playerCount} player${playerCount === 1 ? "" : "s"}${
+          managerCount > 0
+            ? ` · ${managerCount} manager${managerCount === 1 ? "" : "s"}`
+            : ""
+        }
+      </p>
+
+      <ul class="bundle-grid">
+        ${cards
+          .map((card) => renderBundleCard(card, newIds.has(card.id)))
+          .join("")}
+      </ul>
+
+      <p class="reveal__status is-new" id="reveal-status">
+        ${
+          newCount === cards.length
+            ? "Every card was added to your collection."
+            : `${newCount} new card${newCount === 1 ? "" : "s"} added. Duplicates do nothing.`
+        }
+      </p>
+
+      <div class="reveal__actions">
+        ${actionsHtml}
+        ${hint ? `<p class="reveal__hint">${escapeHtml(hint)}</p>` : ""}
+      </div>
+    </div>
+  `;
+
+  return mountReveal({ reveal, trigger, returnFocus, onClose, actions });
+}
+
+function renderBundleCard(card, isNew) {
+  const isManager = card.type === "manager";
+  const meta = isManager
+    ? `Manager · ${escapeHtml(card.club)}`
+    : `${escapeHtml(card.club)} · ${escapeHtml(card.position)} · ${card.rating}`;
+  const alt = isManager
+    ? `${escapeHtml(card.name)}, manager of ${escapeHtml(card.club)}`
+    : `${escapeHtml(card.name)}, ${escapeHtml(card.club)}, ${escapeHtml(
+        card.position
+      )}, rated ${card.rating}`;
+
+  return `
+    <li class="bundle-card ${isManager ? "is-manager" : ""}">
+      <div class="bundle-card__frame">
+        <img
+          src="${cardImageUrl(card)}"
+          alt="${alt}"
+          width="470"
+          height="660"
+          loading="lazy"
+        />
+        <span class="bundle-card__tag">
+          ${isManager ? "Manager" : isNew ? "New" : "Owned"}
+        </span>
+      </div>
+      <span class="bundle-card__name">${escapeHtml(card.name)}</span>
+      <span class="bundle-card__meta">${meta}</span>
+    </li>
+  `;
+}
+
+function mountReveal({ reveal, trigger, returnFocus, onClose, actions }) {
+  document.body.appendChild(reveal);
+  active = { reveal, trigger, returnFocus, onClose };
+
+  reveal.querySelector("[data-reveal-close]")?.focus();
 
   reveal.querySelectorAll("[data-reveal-close]").forEach((element) => {
     element.addEventListener("click", () => closeReveal());

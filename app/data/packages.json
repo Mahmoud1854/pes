@@ -1,0 +1,27 @@
+[
+  {
+    "id": "college_1",
+    "name": "College Package 1",
+    "price": 90,
+    "kind": "random",
+    "oneTime": false
+  },
+  {
+    "id": "real_madrid",
+    "name": "Real Madrid Package",
+    "price": 90,
+    "kind": "random",
+    "oneTime": false,
+    "club": "Real Madrid",
+    "cardIds": [16, 21, 25, 26, 27, 30]
+  },
+  {
+    "id": "barcelona",
+    "name": "Barcelona Package",
+    "price": 90,
+    "kind": "random",
+    "oneTime": false,
+    "club": "Barcelona",
+    "cardIds": [17, 18, 19, 24, 28, 29]
+  }
+]
